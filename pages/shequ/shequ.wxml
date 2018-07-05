@@ -1,0 +1,108 @@
+<!-- 滑块 -->
+<view class='scroll'>
+  <view class='title clear'>
+    <view class='left'>{{sType[0].type_name}}</view>
+    <view class='right' bindtap='seeMore'>查看更多 <image src='../images/jiantou_r.png'></image></view>
+  </view>
+  <view class='sc'>
+    <scroll-view scroll-x class="scroll-header">
+      <view id="green" class="scroll-view-item bc_green" wx:for="{{hotMsg1}}" data-id="{{item.id}}" bindtap='toDetailHot' data-id="{{item.id}}">
+          <image src="{{item.img_urls}}"></image>
+      </view>
+    </scroll-view>
+  </view>
+</view>
+<view class='changes'>
+  <view class="{{active}}" catchtap ='lucy' data-type='1'>精华帖</view>
+  <view class="{{active1}}" catchtap ='lucy' data-type='0'>最新发帖</view>
+</view>
+<view class='changes2' wx:if='{{true==false}}'>
+  <view class=''>
+    <view class='{{activeline}}'></view>
+  </view>
+  <view class=''>
+    <view class='{{activeline1}}'></view>
+  </view>
+</view>
+<!-- wx:if="{{active}}"  -->
+<view class='pinglun' wx:if='{{true}}'>
+  <view class='pl' wx:for="{{jinghua}}" wx:key="son" data-id='{{item.id}}' data-id="{{item.id}}" bindtap='toDetailHot'>
+    <view>
+      <view class='left'>
+        <image src='{{item.head_img}}'></image>
+      </view>
+      <view class='time'>{{item.str_add_date}}回复</view>
+      <view class='right'>
+      <view class='title'>{{item.user_name}}</view>
+    </view>
+    </view>
+      <view class='h-nr'>{{item.title}}</view>
+      <view class='imgBox'>
+        <image wx:for='{{item.img_urls}}' wx:key="items" src="{{j}}" wx:for-index="indexs" wx:for-item="j"></image>
+      </view>
+      <view class='zan-see'>
+        <image src='../images/eye.png'></image> {{item.view_times}}      <image src='../images/unzanpl.png'></image> {{item.dianzanshu}}
+      </view>
+  </view>
+</view>
+<view class='pinglun' wx:if="{{!active}}">
+
+</view>
+<view class='add' bindtap='add'>
+  <image src='../images/add3.png'></image>
+</view>
+
+
+
+
+
+
+
+
+<view class="btnArea">
+  <navigator url="../../pages/allreadyLogin/allreadyLogin"  data-url="../../pages/allreadyLogin/allreadyLogin" hover-class='none' bindtap='changePages'>
+      <view class="">
+          <view class="imgBox">
+              <image src="../images/index.png"></image>
+              <view class="navName ">首页</view>
+          </view>
+          <view>
+              
+          </view> 
+      </view>
+  </navigator>
+  <navigator url="../../pages/newCar/newCar"  data-url="../../pages/newCar/newCar" hover-class='none' open-type="redirect" bindtap='changePages'>
+      <view>
+           <view  class="imgBox">
+              <image src="../images/car.png"></image>
+              <view class="navName">
+                 底价新车
+              </view> 
+          </view>
+          
+      </view>
+  </navigator>
+  <navigator url="../../pages/shequ/shequ"  data-url="../../pages/shequ/shequ" hover-class='none' open-type="switchTab" bindtap='changePages'>
+      <view>
+           <view  class="imgBox">
+              <image src="../images/shequ_b.png"></image>
+                <view class="navName indexName">
+                  社区
+                </view> 
+          </view>
+        
+      </view>
+  </navigator>
+  <navigator url="../../pages/mine/mine" data-url="../../pages/mine/mine" hover-class='none' open-type="switchTab" bindtap='changePages'>
+      <view  class="imgBox">
+           <view>
+              <image src="../images/mine.png"></image>
+          
+               <view class="navName">
+                我的
+              </view>
+          </view>
+         
+      </view>
+  </navigator>
+</view> 

@@ -1,0 +1,19 @@
+<view class='title clear'>
+  <view class='left'>
+    <input placeholder='请输入标题（限6-30个字）' bindinput='bindinput' data-type='title'></input>
+  </view>
+  <view class='right'>
+    <button bindtap='sub' disabled='{{dis}}'>发表</button>
+  </view>
+</view>
+<view class='content'>
+  <textarea placeholder='请输入正文' bindinput='bindinput' data-type='text'></textarea>
+</view>
+<view class='imgBox'>
+  <view class='img' wx:for='{{showUrl}}' wx:key="son" wx:for-item="item">
+      <image src='{{item}}' mode="widthFix"></image>
+  </view>
+</view>
+<view class='uploadImg' bindtap='upload'>
+  <image src='../images/upload.png'></image>
+</view>

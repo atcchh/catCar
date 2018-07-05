@@ -1,0 +1,61 @@
+.container{
+  padding:0;
+}
+.doneBtn{
+  width:630rpx;
+  margin:0 auto;
+  height:80rpx;
+  margin-top:90rpx;
+}
+.doneBtn button{
+  height:100%;
+  line-height:80rpx;
+  color:#fff;
+  border-radius:5px;
+  background:#34A4E4;
+  font-size:30rpx;
+  font-weight:normal;
+}
+.txt1,.txt2{
+  display:flex;
+  font-size:30rpx;
+  color:#000;
+}
+.ballRed text{
+  margin-right:20rpx;
+  width:20rpx;
+  height:20rpx;
+  display:inline-block;
+  border-radius:50%;
+  background:#F65B4E;
+}
+.txt2{
+  margin-top:30rpx;
+}
+.gift{
+  margin-top:105rpx;
+  width:100%;
+  margin-bottom:150rpx;
+}
+.gift view{
+  width:70%;
+  margin:0 auto;
+  margin-left:10%;
+}
+.gift view image{
+  width:100%;
+  margin:0 auto;
+}
+.cong{
+  color:#F65B4E;
+  font-size:46rpx;
+}
+.cong{
+  width:100%;
+  text-align:center;
+  margin-top:182rpx;
+  position:absolute;
+}
+.txt1{
+  font-size:26rpx;
+}

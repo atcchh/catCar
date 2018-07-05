@@ -1,0 +1,117 @@
+.inputBox{
+  height:82rpx;
+  background:#fff;
+  line-height: 82rpx;
+  border-bottom:1px solid #f2f2f2;
+  display:flex;
+  padding-left:20rpx;
+  padding-right:20rpx;
+  font-size:28rpx;
+  color:#000;
+}
+page .inputBox:first-child{
+  margin-top:8rpx;
+}
+.inputBox .imgBox{
+  height:28rpx;
+  width:16rpx;
+}
+image{
+  width:100%;
+  height:100%;
+}
+.inputBox:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.fr{
+  float:right;
+}
+.r1{
+  height:82rpx;
+  width:510rpx;
+}
+.r1 input{
+  text-align: right;
+  height:100%;
+  padding-right:15rpx;
+  font-size:26rpx;
+  color:#000;
+}
+.i1 .imgBox{
+  margin-top:5rpx;
+}
+.i1 .left{
+  min-width:210rpx;
+}
+.inputBox input{
+  height:82rpx;
+  line-height: 82rpx;
+  color:#676767;
+  font-size:26rpx;
+}
+
+
+
+textarea{
+  color:#000;
+  height:236rpx;
+  width:100%；
+}
+.itexta{
+  padding-top:8rpx;
+  height:236rpx;
+}
+
+.inputBox  .selImg{
+  width:44rpx;
+  height:44rpx;
+  margin-top:20rpx;
+  margin-left:36rpx;
+}
+.yufu .right{
+  text-align: right;
+}
+.sub{
+  height:120rpx;
+  width:100%;
+  background:#34A4E4;
+  line-height:120rpx;
+  color:#fff;
+  text-align: center;
+  border-radius:0;
+  position:fixed;
+  top:100%;
+  margin-top:-120rpx;
+  font-size:30rpx;
+}
+.qiwang input,.qiwang .right view{
+  
+  float:left;
+}
+.qiwang .left{
+  margin-right:32rpx;
+}
+.gang{
+  width:29rpx;
+  border-top:1px solid #000;
+  margin-top:40rpx;
+}
+.qiwang .in1{
+  text-align: left;
+  width:180rpx;
+}
+.qiwang .in2{
+  text-align: right;
+  width:160rpx;
+}
+.tishi{
+  color:#000;
+  font-size:24rpx;
+  padding:10rpx 20rpx;
+  margin-bottom:100rpx;
+}
+.tishi view:first-child{
+  height:134rpx;
+}

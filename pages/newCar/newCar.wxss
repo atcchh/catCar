@@ -1,0 +1,103 @@
+.carList{
+  width:100%;
+}
+.container{
+  padding:0;
+}
+.car{
+  margin:0 20rpx 0 0;
+}
+.mt20{
+  margin-bottom:20rpx;
+}
+.brands .mt20:last-child{
+  margin-bottom:0;
+}
+.brands{
+  /* display:flex; */
+}
+.car{
+  float:left;
+}
+.brands:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.brands{
+  margin-left:20rpx;
+}
+.mt20:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.logos{
+  width:28rpx;
+  height:100%;
+  vertical-align: middle;
+  margin-top:5rpx;
+  margin-right:10rpx;
+}
+.logos image{
+  width:28rpx;
+  height:28rpx;
+}
+.brandName{
+  width:100%;
+}
+.newCarTitle{
+  height:80rpx;
+  line-height:80rpx;
+  display:flex;
+  color:#969696;
+  font-size:26rpx;
+  width:730rpx;
+  padding-left: 20rpx;
+}
+.carImg{
+  height:260rpx;
+  width:345rpx;
+  border-radius:5px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background:#D8D8D8;
+}
+.car{
+  width:345rpx;
+  float:left;
+  margin-bottom:20rpx;
+}
+.carImg image{
+  width:345rpx;
+  height:260rpx;
+  border-radius:5px;
+  border-bottom-left-radius:0;
+  border-bottom-right-radius:0;
+}
+.carMsg{
+  width:325rpx;
+  height:160rpx;
+  background:#fff;
+  padding-left:20rpx;
+  padding-top:1rpx;
+}
+.carType{
+  color:#101010;
+  font-size:26rpx;
+}
+.carPrice{
+  font-size:24rpx;
+  color:#F65B4E;
+}
+.carClass{
+  font-size:22rpx;
+  color:#969696;
+}
+.carType{
+  margin-top:20rpx;
+}.carPrice{
+  margin-top:17rpx;
+}.carClass{
+  margin-top:15rpx;
+}

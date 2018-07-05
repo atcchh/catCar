@@ -1,0 +1,58 @@
+.btnBox{
+  position:fixed;
+  top:100%;
+  left:0;
+  width:750rpx;
+  height:80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  margin-top:-120rpx;
+}
+.btnBox button{
+  width:630rpx;
+  background:#34A4E4;
+  font-size:30rpx;
+  color:#fff;
+  text-align: center;
+  line-height: 80rpx;
+}
+.btnBox button[disabled]{
+  background:#34A4E4;
+  color:#fff;
+}
+.inputBox{
+  background:#fff;
+  height:100rpx;
+  line-height: 100rpx;
+  font-size:28rpx;
+  color:#000;
+  padding-left:20rpx;
+  padding-right:20rpx;
+}
+.line{
+  width:750rpx;
+  border-top:1px solid #f2f2f2;
+}
+.left{
+  float:left;
+  height:100rpx;
+  line-height: 100rpx;
+}
+.right{
+  float:right;
+  height:100rpx;
+  line-height: 100rpx;
+}
+.right input{
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: right;
+}
+picker{
+  height:100rpx;
+
+}
+.jt{
+  width:28rpx;
+  height:16rpx;
+}

@@ -1,0 +1,50 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+  <button bindtap="gotonext">跳转</button>
+  <button bindtap="gomodel">查看车型</button>
+  <button bindtap="choseModel">选择车型</button>
+  <button bindtap="details">查看详情</button>
+  <button bindtap="xunjia">询价</button>
+   <button bindtap="shijia">试驾</button>
+    <button bindtap="doneReg">完成注册</button>
+    <button bindtap="jifen">积分</button>
+    <button bindtap="choseBrand">选择品牌</button>
+    <button bindtap="choseGender">选择身份</button>
+    <button bindtap="newCar">新车</button>
+    <button bindtap="mine">我的</button>
+    <button bindtap="myGift">我的好礼</button>
+    <button bindtap="allreadyLogin">已登录</button>
+    <button bindtap='choseGuwen'>选择顾问</button>
+    <button bindtap="wanna">购车意愿</button>
+    <button bindtap="md" id="{{lucy}}">锚点</button>
+
+    <button bindtap='pay'>支付</button>
+
+    <button bindtap="login">login</button>
+    <button bindtap="zixun">咨询</button>
+    <button bindtap="jifenMall">积分商城</button>
+    <button bindtap='mall'>商城</button>
+     <button bindtap="spDetail">商品详情</button>
+     <button bindtap="dizhi">地址</button>
+     <button bindtap='queren'>确认订单</button>
+     <button bindtap='ddxq'>订单详情</button>
+      <button bindtap='gouwuche'>购物车</button>
+      <button bindtap='bianjidizhi'>编辑地址</button>
+        <button bindtap='guanlidizhi'>管理地址</button>
+     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button> 
+    
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  <view>
+    <input id="lucy" bindblur='bindblur'/>
+    <button>{{obj[e.currentTarget.id]}}</button>
+    <text>{{obj[e.currentTarget.id]}}</text>
+  </view>
+</view>

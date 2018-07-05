@@ -1,0 +1,98 @@
+.container{
+  padding:0;
+  padding-bottom:20rpx;
+}
+.headers{
+  height:285rpx;
+  width:100%;
+  background:#34A4E4;
+  margin-bottom:20rpx;
+}
+
+.prot{
+  margin-top:40rpx;
+}
+.imgBox{
+  width:125rpx;
+  height:125rpx;
+  border:1px solid #fff;
+  border-radius: 50%;
+  margin:0 auto;
+  overflow:hidden;
+}
+.imgBox image{
+  width:100%;
+  height:100%;
+  border-radius: 50%;
+}
+.name,.userName{
+  color:#fff;
+  text-align:center;
+}
+.name{
+  font-size:30rpx;
+  margin-top: 12rpx;
+}
+.userName{
+  font-size: 20rpx;
+  margin-top:23rpx;
+}
+.counselor{
+  display: flex;
+  width:100%;
+  background:#fff;
+  /* margin-bottom:20rpx; */
+}
+.h100{
+  height:100rpx;
+  line-height:100rpx;
+  display:flex;
+  width:100%;
+  background:#fff;
+}
+.h100 view{
+  width:50%;
+}
+.counLeft{
+  font-size:30rpx;
+  color:#000;
+  padding-left:20rpx;
+}
+.counRight{
+  font-size:26rpx;
+  color:#676767;
+  text-align:right;
+  padding-right:20rpx;
+}
+.line{
+  width:730rpx;
+  margin-left:20rpx;
+  height:2rpx;
+  background:#F1F1F1;
+}
+.function{
+  background:#fff;
+}
+.function .line:last-child{
+  display:none;
+}
+.gray{
+  width:100%;
+  height:20rpx;
+  background:#F2F2F2;
+}
+.btnArea image{
+  border-radius: 0 !important;
+}
+.h100 .jt{
+  width:16rpx;
+  height:100%;
+  margin-right:20rpx;
+}
+.jt image{
+  width:16rpx;
+  height:28rpx;
+}
+.aboutUs .counLeft ,.gift .counLeft{
+  margin-right:500rpx;
+}

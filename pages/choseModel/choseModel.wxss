@@ -1,0 +1,32 @@
+view{
+  color:#969696;
+}
+.choesesCar{
+  padding:0 20px;
+}
+.nameModels{
+  background:#fff;
+}
+.machineName{
+  height:60rpx;
+  padding-left:20rpx;
+  line-height:60rpx;
+  font-size:26rpx;
+}
+.line{
+  width:730rpx;
+  height:1px;
+  margin-left:20rpx;
+  background:#F1F1F1;
+}
+.names{
+  background:#fff;
+  height:122rpx;
+  color:#000000;
+  line-height:122rpx;
+  font-size:30rpx;
+  padding-left:20rpx;
+}
+.nameModels .line:last-child{
+  display:none;
+}

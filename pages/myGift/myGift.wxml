@@ -1,0 +1,62 @@
+<view class="container">
+    <view class="giftList">
+         <!-- <view class="gift" wx:for="{{gift}}" wx:key="fa">
+            <view class="giftTitle">
+              <view class="giftName">{{item.gift_name}}</view>
+              <view class="giftPrice"><text>￥</text> 500</view>
+            </view>
+            <view class="giftBottom">
+              <view class="giftLeft">
+                <view class="validTime">
+                  <view>有效期限：</view>
+                  <view class="startTime">2017-11-11</view>
+                  <view>至</view>
+                  <view class="endTime">2017-12-12</view>
+                </view>
+                <view class="condition">
+                    <view>满</view>
+                    <view class="num">500</view>
+                    <view>元可用</view>
+                </view>
+              </view>
+              <view class="giftRight">
+                   <view>
+                      <image src="{{item.img_url}}"></image>
+                   </view>
+              </view>
+            </view>
+        </view>  -->
+        <view class="gift" wx:if="{{gift.length}}" wx:for="{{gift}}" wx:key="fa">
+            <image src="{{item.img_url}}"></image>
+        </view> 
+        <view wx:if="{{!gift.length}}">
+            暂无礼品哦，赶紧去领取吧～～～
+        </view>
+        <!-- <view class="gift">
+            <view class="giftTitle">
+              <view class="giftName">8月保养优惠券</view>
+              <view class="giftPrice"><text>￥</text> 500</view>
+            </view>
+            <view class="giftBottom">
+              <view class="giftLeft">
+                <view class="validTime">
+                  <view>有效期限：</view>
+                  <view class="startTime">2017-11-11</view>
+                  <view>至</view>
+                  <view class="endTime">2017-12-12</view>
+                </view>
+                <view class="condition">
+                    <view>满</view>
+                    <view class="num">500</view>
+                    <view>元可用</view>
+                </view>
+              </view>
+              <view class="giftRight">
+                   <view>
+                      <image src="../images/garyCar.png"></image>
+                   </view>
+              </view>
+            </view>
+        </view> -->
+    </view>
+</view>

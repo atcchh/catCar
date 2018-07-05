@@ -1,0 +1,130 @@
+<swiper indicator-dots="{{indicatorDots}}" indicatorActiveColor="{{indicatorActiveColor}}" indicatorColor="{{indicatorColor}}" circular="{{circular}}" current="{{current}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="bindchange">
+  <block wx:for="{{imgUrls}}"  wx:key="key">
+    <swiper-item>
+      <image src="{{item.img_url}}" daata-url="{{url}}" class="slide-image" width="355" height="150" bindtap='swipclick'/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="modelItr">
+    <view class="modelName">
+       {{detail.name}}
+    </view>
+    <view class='price'>
+        <text>￥ </text>
+        <text>{{detail.price}}</text>
+        <text class="deline">{{detail.price+1}}</text>
+    </view>
+</view>
+<view class="arguments">
+    <view class="argTitle">
+        <view class="tiaoBox">
+          <view class="tiao"></view>
+        </view>
+        <text>
+            商品详情
+        </text>
+    </view>
+    <view class="argList">
+      
+        <view class="">
+          <view class="peizhi">
+              <image src="{{pz}}" mode='widthFix'></image>
+          </view> 
+        </view>
+    </view>
+
+</view>
+
+<view animation="{{animationData}}" class="drawer_attr_box" wx:if="{{showModalStatus}}">  
+    <view class="title">
+        <view class='left'>
+            <view class='imgBox'>
+                <image src="{{xiaotu}}"></image>
+            </view>
+        </view>
+        <view class="right">
+              <view class="spName2">{{detail.name}}</view>
+              <view class="price clears">
+                <view class="left redText">￥{{detail.price}}</view>
+                <view class="right">库存{{stock}}件</view>
+              </view>
+        </view>
+    </view>
+    <view class='line'></view>
+    <view class="colors">
+      <view class="ftitle">颜色</view>
+      <view class="btnBox">
+          
+          <view class="btn" bindtap="changeColor" wx:for="{{colorObjs}}" wx:key="fa" data-id="{{item.id}}" style="{{item.select}}">{{item.color_name}}</view>
+      </view>
+    </view>
+    <view class="line"></view>
+    <view class="colors">
+      <view class="ftitle">规格</view>
+      <view class="btnBox">
+         <view class="btn"  bindtap="changeSize"  wx:for="{{sizeObjs}}" wx:key="fa" data-id="{{item.id}}" style="{{item.select2}}">{{item.size_name}}</view>
+      </view>
+    </view>
+    <view class='line'></view>
+    <view class="colors">
+      <view class="ftitle">数量</view>
+      <view class="inputBox">
+        <button disabled='{{able1}}' bindtap='countClose' style="{{ableColor}}">-</button>
+        <input value="{{counts}}"></input>
+        <button bindtap='countAdd'>+</button>
+      </view>
+    </view>
+    <view class="line"></view>
+    <view class="colors gongjiBox">
+      <view class="gongji">共计：￥{{allprice}}</view>
+    </view>
+    <view class="line"></view>
+    <view class="sub">
+        <button class="subBtn" bindtap='buy' data-id="{{detail.id}}" disabled='{{subDisabled}}'>确定</button>
+    </view>
+</view>  
+<view class='bcar' bindtap='bcar'>
+  <image src="../images/bcar.png"></image>
+</view>
+<view class="btnArea">
+  <navigator url="">
+      <view class="" bindtap='tel'>
+          <view class="imgBox">
+              <image src="../images/telephone.png"></image>
+              <view class="navName indexName">电话</view>
+          </view>
+          <view>
+              
+          </view> 
+      </view>
+  </navigator>
+  <navigator>
+  <button open-type='contact' class="kefuBtn">
+      <view class="kefu">
+           <view  class="imgBox">
+              <image src="../images/message.png"></image>
+              <view class="navName">
+                 微信
+              </view> 
+          </view>
+      </view> 
+  </button>
+       <!-- <view>
+           <view  class="imgBox">
+              <image src="../images/message.png"></image>
+              <view class="navName">
+                 微信
+              </view> 
+          </view>
+      </view>  -->
+  </navigator>
+  <navigator url="" open-type="switchTab">
+      <button class="tryDrive" disabled='{{carDisable}}' bindtap="powerDrawer" data-car="1" data-statu="open">加入购物车</button>
+      <view class="drawer_screen" bindtap="powerDrawer" data-statu="close" wx:if="{{showModalStatus}}"></view>  
+  </navigator>
+  <navigator url="" open-type="switchTab">
+      <button class="zixun"  disabled='{{buydisable}}' bindtap="powerDrawer" data-car="2" data-statu="open">立即购买</button>
+      <view class="drawer_screen" bindtap="powerDrawer" data-statu="close" wx:if="{{showModalStatus}}"></view>  
+  </navigator>
+</view>

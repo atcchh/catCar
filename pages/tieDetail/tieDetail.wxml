@@ -1,0 +1,63 @@
+<view class='tie'>
+  <view class='title'>{{tie.title}}</view>
+  <view class='clears tou'>
+    <view class='left' style='margin-right:10rpx;'><image src='{{tie.head_img}}'></image></view>
+    <view class='left'>{{tie.user_name}}</view>
+  </view>
+  <view class='content'>{{tie.content}}</view>
+  <view class='imgBox'>
+    <view class='img' wx:for="{{tieImg}}" wx:for-item='i'>
+      <image wx:if='{{tieImg}}' src='{{i}}'></image>
+    </view>
+  </view>
+  <view class='times'style='text-align:right;height:100rpx;line-height:100rpx;'>
+    <text>{{tie.str_add_date}} </text>
+    <!-- 2018-10-10 10:00 -->
+    <text style='Text-indent:95rpx;'>阅读数：{{tie.view_times}}</text>
+    <text>评论数：{{tie.pinglunshu}}</text>
+    <text>点赞数：{{tie.dianzanshu}}</text>
+  </view>
+</view>
+<view class='pinglunNum'>
+  全部{{pinglun.length}}条评论
+</view>
+<view class='pinglunBox'>
+  <view class='pinglun' wx:for='{{pinglun}}' wx:key="son" wx:for-index="dex" bindtap="lucy" data-id="{{item.id}}" data-state="1">
+      <view class='top clear'>
+          <view class='left'>
+            <image src='{{item.head_img}}'></image>
+          </view>
+          <view class='middle'>
+            <view class='names'>{{item.user_name}}</view>
+            <view class='times'>{{item.str_add_date}}</view>
+          </view>
+          <view class='right clear'>
+            <view class='left' style='margin-top:-9rpx;margin-right:10rpx;'><image  bindtap='dianzanpinglun'  data-index='{{dex}}' data-id='{{item.id}}'  src='{{item.zan}}' style='border-radius:0;background:transparent;'></image></view>
+            <view class='left zan2'>{{item.dianzanshu}}</view>
+          </view>
+      </view>
+      <view class='content' >{{item.content}}</view>
+      <view class='huifu' wx:for="{{item.replys}}" wx:key="items" wx:for-item="items" data-id="{{items.id}}" data-comment="{{items.comment_id}}">
+          <text bindtap='{{lucy}}'>{{items.user_name}}</text>：<text>@{{item.user_name}}</text> {{items.reply}}
+      </view>
+  </view>
+  <!-- <view class='huifu'>
+    <text disabled='{{huifu}}' bindtap=''>{{}}</text>：<text>{{item.user_name}}</text> {{items.reply}}
+  </view> -->
+</view>
+  <view class='bottoms clears'>
+    <view class='left'>
+      <input bindconfirm='pinglun' value='{{inputval}}' focus='{{focus}}'></input>
+    </view>
+    <view class='right clears'>
+      <view class='zans'>
+        <button bindtap='dianzan'>
+          <image src='{{zan1}}'></image>
+        </button>
+        <button open-type="share" style='margin-left:0;'>
+          <image src='{{shares}}'>
+          </image>
+        </button>
+      </view>
+    </view>
+  </view>

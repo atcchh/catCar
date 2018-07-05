@@ -1,0 +1,35 @@
+<view class="wanna">
+  <view class="content">
+      <view class="title">选择您的购车意愿</view>
+      <view wx:for="{{selectTitle}}" wx:key="fa">
+        <view class="time" data-id="{{item.id}}">
+          <!-- 购车时间 -->
+          {{item.type_name}}
+        </view>
+        <view class="timeTeam">
+            <!-- <view  wx:key="son"  wx:for="{{newSelectTitle[btnlist]}}" wx:for-item="cell" wx:for-index="cellindex" data-type_id="{{cell.type_id}}"  data-modelId="{{cell.model_id}}" bindtap='selectType'>{{cell.model_name}}</view> -->
+            <!-- <view  wx:for="{{selectTitle.model_list}}" wx:key="lucy" data-model_id="{{lucy.model_id}}" data-type_id="{{lucy.type_id}}">{{lucy.model_name}}</view> -->
+            <!-- <view>{{item.model_list[0].model_name}}</view> -->
+            <view wx:for="{{item.model_list}}" wx:key="items" wx:for-item="items" data-model_id="{{items.model_id}}" style="{{items.active}}" data-type_id="{{items.type_id}}" bindtap="selectType">{{items.model_name}}</view>
+        </view>
+      </view>
+      <!-- <view class="time yusuan">购车预算</view>
+      <view class="timeTeam">
+          <view class="{{active21}}" bindtap="selectPri1">{{char_lt}}5万</view>
+          <view class="{{active22}}" bindtap="selectPri2">5-10万</view>
+          <view class="{{active23}}" bindtap="selectPri3">{{char_rt}}10万</view> 
+      </view>
+      <view class="time yusuan yt">购车用途</view>
+      <view class="timeTeam">
+          <view class="{{active31}}" bindtap="yongtu1">家用</view>
+          <view class="{{active32}}" bindtap="yongtu2">商用</view>
+          <view class="{{active33}}" bindtap="yongtu3">运输</view>
+      </view>
+      <view class="time yusuan user">使用者</view>
+      <view class="timeTeam">
+          <view class="{{active41}}" bindtap="user1">本人</view>
+          <view class="{{active42}}" bindtap="user2">他人</view>
+      </view> -->
+      <view class="sub" bindtap='sub'>选好了</view>
+  </view>
+</view>

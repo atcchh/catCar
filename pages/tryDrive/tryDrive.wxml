@@ -1,0 +1,72 @@
+<page>
+        <view class="askTitle">
+            <view class="askPortrait">
+                <view class="imgbox">
+                    <image src="{{src}}">
+                
+                    </image>
+                </view>
+            </view>
+            <view class="askName">
+                <view class="names">
+                    <!-- 奔驰S100系列 2018款 2.0T 自动挡顶级配置 -->
+                   {{type_name}}
+                </view>
+                <view class="zdPrice">
+                   <view> 指导价：</view>
+                   <view class="redText">{{zhidao}}万</view>
+                </view>
+            </view>
+        </view>
+        <view class="detailsMsg">
+            <view class="msg">
+                <view class="msgLeft">姓名</view>
+                <!-- <view class="msgRight">{{userName}}</view> -->
+                <view class="msgRight"><input placeholder='请输入姓名'  type="text" bindinput ="tryName" data-name="tryName"></input></view>
+            </view> 
+            <view class="line"></view>
+            <view class="msg">
+                <view class="msgLeft">手机</view>
+                <!-- <view class="msgRight">{{userPhone}}</view> -->
+                <view class="msgRight"><input placeholder='请输入手机号'  maxlength="11" bindinput ="tryPhone" data-name="tryPhone"></input></view>
+            </view> 
+            <view class="line"></view>
+            <view class="msg">
+                <view class="msgLeft">到店日期</view>
+                <view class="msgRight">
+                      <view class="section">
+                        <picker mode="date" value="{{date}}" start="{{startDate}}" end="{{endDate}}" bindchange="bindDateChange">
+                        <view class="picker">
+                        {{come_date}}
+                        </view>
+                        </picker>
+                      </view>
+                     <image  class="jiantou" src="../images/jiantou_r.png"></image>
+                </view>
+            </view> 
+            <view class="line"></view>
+            <!-- <view class="msg">
+                <view class="msgLeft">到店日期</view>
+                <view class="msgRight">
+                      <view class="section2">
+                        <picker mode="date" value="{{date2}}" start="{{startDate}}" end="{{endDate}}" bindchange="bindDateChange">
+                        <view class="picker">
+                        {{date2}}
+                        </view>
+                        </picker>
+                      </view>
+                       <image  class="jiantou" src="../images/jiantou_r.png"></image>
+                </view>
+            </view> -->
+        </view>
+        <view class="askTxt">
+            <textarea class="askArea" placeholder='请输入您所期望的优惠' bindinput="bindTextAreaBlur" >
+            
+            </textarea>
+        </view>
+        <view class="btn" bindtap='sub'>
+              <button>提交</button>
+        </view> 
+
+        
+</page>

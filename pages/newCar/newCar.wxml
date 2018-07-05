@@ -1,0 +1,85 @@
+<view class="container">
+  <view class="carList">
+    <view class="carBrand" wx:for="{{carList}}" wx:key="item">
+      <view class="newCarTitle">
+         <view class="logos"><image src="{{item.img_url}}"></image></view>
+        <view class="brandName">{{item.brand_name}}</view> 
+      </view>
+      <view class="brands">   <!--wx:for="{{item.model_list}}" wx:key="items" wx:for-item="items" -->
+            <view class="car" wx:for="{{item.car_list}}" wx:key="items" wx:for-item="items" data-car_id="{{items.car_id}}" bindtap='toDetail'>
+            <view class="carImg">
+                <image src="{{items.img_url}}"></image>
+            </view>
+            <view class="carMsg">
+                <view class="carType">
+                {{items.car_name}}
+                    <!-- 奔驰S100系列 -->
+                </view>
+                <view class="carPrice">
+                    <!-- 50-100万 -->
+                    {{items.min_price}}<text>-</text>{{items.max_price}}万
+                </view>
+                <view class="carClass">
+                    <text>{{items.car_type_count}}</text><text>种车型</text>
+                </view>
+            </view>
+        </view>
+      </view>
+    </view>
+
+  </view>
+</view>
+
+
+
+
+
+
+
+<view class="btnArea">
+  <navigator url="../../pages/allreadyLogin/allreadyLogin"  data-url="../../pages/allreadyLogin/allreadyLogin" hover-class='none' bindtap='changePages'>
+      <view class="">
+          <view class="imgBox">
+              <image src="../images/index.png"></image>
+              <view class="navName">首页</view>
+          </view>
+          <view>
+              
+          </view> 
+      </view>
+  </navigator>
+  <navigator url="../../pages/newCar/newCar"  data-url="../../pages/newCar/newCar" open-type="redirect" hover-class='none' bindtap='changePages'>
+      <view>
+           <view  class="imgBox">
+              <image src="../images/car_b.png"></image>
+              <view class="navName indexName ">
+                 底价新车
+              </view> 
+          </view>
+          
+      </view>
+  </navigator>
+  <navigator url="../../pages/shequ/shequ"  data-url="../../pages/shequ/shequ" open-type="switchTab" hover-class='none' bindtap='changePages'>
+      <view>
+           <view  class="imgBox">
+              <image src="../images/shequ.png"></image>
+                <view class="navName">
+                  社区
+                </view> 
+          </view>
+        
+      </view>
+  </navigator>
+  <navigator url="../../pages/mine/mine" data-url="../../pages/mine/mine" open-type="switchTab" hover-class='none' bindtap='changePages'>
+      <view  class="imgBox">
+           <view>
+              <image src="../images/mine.png"></image>
+          
+               <view class="navName">
+                我的
+              </view>
+          </view>
+         
+      </view>
+  </navigator>
+</view> 

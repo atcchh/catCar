@@ -1,0 +1,164 @@
+.userName{
+  height:80rpx;
+  line-height:80rpx;
+  width:100%;
+  font-size:30rpx;
+  color:#919191;
+  text-align: center;
+}
+.likeModel{
+  height:100rpx;
+  line-height:100rpx;
+  background:#fff;
+  display:flex;
+  font-size:32rpx;
+  color:#000;
+  margin-bottom:20rpx;
+}
+.likeModel .left{
+  height:100%;
+  line-height:100rpx;
+  padding-left:20rpx;
+}
+.likeModel .right{
+  margin-left:325rpx;
+  font-size:26rpx;
+  color:#7F7F7F;
+  line-height:100rpx;
+}
+.choseGuwen{
+  height:100rpx;
+  line-height:100rpx;
+  font-size:32rpx;
+  color:#000;
+  padding-left:20rpx;
+  background:#fff;
+  border-bottom:2rpx solid #f2f2f2;
+}
+.guwenList{
+  background:#fbfbfb;
+}
+.guwen{
+  height:140rpx;
+  width:730rpx;
+  margin-left:20rpx;
+  border-bottom:2rpx solid #f2f2f2;
+  display:flex;
+}
+.name{
+  font-size:32rpx;
+  color:#000000;
+  padding-left:20rpx;
+  margin-top:25rpx;
+}
+.left{
+  padding-top:1rpx;
+}
+.guwen .left{
+    width:60%;
+}
+.addr{
+  display:flex;
+  font-size:24rpx;
+  color:#969696;
+  padding-left:20rpx;
+  margin-top:17rpx;
+}
+.location,.location image{
+  width:14rpx;
+  height:20rpx;
+}
+.location{
+  margin-right:10rpx;
+  margin-top:2rpx;
+}
+.curList{
+  /* display:flex; */
+  background:#fff;
+  min-height:240rpx;
+}
+.curList:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.curList .cur{
+  width:25%;
+}
+.cur .imgBox{
+  width:100rpx;
+  height:100rpx;
+  border-radius:50%;
+  overflow:hidden;
+  margin:0 auto;
+  background:#ddd;
+  margin-top:40rpx;
+  margin-bottom:8rpx;
+  box-sizing:border-box;
+}
+.cur .imgBox image{
+  width:100%;
+  height:100%;
+  border-radius: 50%;
+}
+.cur{
+  position:relative;
+  box-sizing:border-box;
+  width:25%;
+  float:left;
+}
+.curName{
+  text-align:center;
+  margin:0 auto;
+  font-size:32rpx;
+  color: #000000;
+  margin-top:14rpx;
+}
+.cur .right{
+  width:30rpx;
+  height:30rpx;
+  position:absolute;
+  left:130rpx;
+  top:30rpx;
+}
+.right image{
+  width:100%;
+  height:100%;
+}
+.sub{
+  height:80rpx;
+  width:300rpx;
+  margin:0 auto;
+  line-height:80rpx;
+  background: #34A4E4;
+  color:#fff;
+  font-size:32rpx;
+  border-radius:5px;
+  text-align: center;
+  position:fixed;
+  top:100%;
+  margin-top:-160rpx;
+  /* left:60rpx; */
+  margin-left:40rpx;
+}
+.guwen .right{
+  height:140rpx;
+  margin-left:112px;
+}
+.guwen .right image{
+  width:28rpx;
+  height:16rpx;
+   margin-top:60rpx; 
+}
+.likeModel .imgBox{
+  width:16rpx;
+  height:28rpx;
+  margin-left:20rpx;
+}
+.likeModel .imgBox image{
+  width:100%;
+  height:100%;
+}
+.guwenList:last-child{
+  margin-bottom:160rpx;
+}

@@ -1,0 +1,30 @@
+<view class="container">
+  
+  <view class="choesesCar">
+    <view class="machineName">
+      长安马自达
+    </view>
+    <view class="nameModels">
+        <view class="names">马自达三昂克赛拉</view>
+        <view class="line"></view>
+        <view class="names">马自达三昂克赛拉</view>
+        <view class="line"></view>
+        <view class="names">马自达三昂克赛拉</view>
+        <view class="line"></view>
+    </view>
+    
+  </view> 
+  <view class="choesesCar">
+      <view class="machineName">
+      一汽马自达
+    </view>
+    <view class="nameModels">
+        <view class="names">马自达三昂克赛拉</view>
+        <view class="line"></view>
+        <view class="names">马自达三昂克赛拉</view>
+        <view class="line"></view>
+        <view class="names">马自达三昂克赛拉</view>
+        <view class="line"></view>
+    </view>
+  </view>
+</view>

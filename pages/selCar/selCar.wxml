@@ -1,0 +1,35 @@
+<view>
+  <view class='inputBox clears'>
+    <view class='left'>爱车型号</view>
+    <view class='right'><input placeholder='请输入' data-types='carType' bindinput='ipnutChange'></input></view>
+  </view>
+  <view class='line'></view>
+    <view class='inputBox clears'>
+    <view class='left'>车牌号</view>
+    <view class='right'>
+      <input placeholder='请输入' style='text-align:left;' data-types='pai' bindinput='ipnutChange'></input>
+    </view>
+    <view class='right'>
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{places}}">
+          <view class="picker">
+            选择省份：{{places[index]}}
+          </view>
+      </picker>
+      <!-- <image class='jt' src='../images/jiantou_down.png'></image> -->
+    </view>
+  </view>
+  <view class='line'></view>
+  <view class='inputBox clears'>
+    <view class='left'>车主姓名</view>
+    <view class='right'><input placeholder='请输入' data-types='userNames' bindinput='ipnutChange'></input></view>
+  </view>
+  <view class='line'></view>
+  <view class='inputBox clears'>
+    <view class='left'>车主手机号</view>
+    <view class='right'><input placeholder='请输入' data-types='userPhone' bindinput='ipnutChange'></input></view>
+  </view>
+
+  <view class='btnBox'>
+    <button disabled='{{btnDis}}' bindtap='sub'>提交</button>
+  </view>
+</view>

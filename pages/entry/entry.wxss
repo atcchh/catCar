@@ -1,0 +1,196 @@
+page{
+  background:#F2F2F2;
+  /* padding-bottom:100rpx; */
+}
+swiper{
+  height:280rpx;
+}
+swiper swiper-item image{
+  width:100%;
+  height:100%;
+  margin:0 auto;
+}
+.navbox{
+  height:200rpx;
+  width:100%;
+  background:#fff;
+  align-items: center;
+  display:flex;
+  justify-content: space-around;
+}
+.navbox .img{
+    height:66rpx;
+}
+.img image{
+    height:66rpx;
+}
+.newCar image{
+    width:84rpx;
+}
+.pj image{
+    width:64rpx;
+}
+.jf image{
+  width:60rpx;
+}
+.by image{
+  width:68rpx;
+}
+.nav{
+ text-align:center;
+}
+.nav text{
+  font-size:23rpx;
+}
+.nav view{
+  height:30rpx;
+  width:100%;
+}
+.nav>text{
+  color:#000;
+}
+.noobAdv{
+  margin:20rpx 0;
+  height:200rpx;
+}
+.noobAdv image{
+  width:100%;
+  height:100%;
+  margin:0 auto;
+}
+.Mou{
+  height:80rpx;
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom:1px;
+  background:#fff;
+}
+.advContent{
+  height:416rpx;
+  margin-bottom:20rpx;
+  display:flex;
+}
+.advContent >view{
+  width:49.9%;
+  height:100%;
+}
+.advleft{
+  margin-right:2rpx;
+  background: #fff;
+}
+.advright >.top{
+  height:202rpx;
+  margin-bottom:2rpx;
+  background:#fff;
+  display:flex;
+}
+.advright >.bottom{
+  height:212rpx;
+  background:#fff;
+  display:flex;
+}
+.hotMessageBox >.hotMessage{
+  height:495rpx;
+  margin-bottom:2rpx;
+  background:#fff;
+  padding-top:22rpx;
+}
+.hotMessage>.imgbox{
+  width:710rpx;
+  height:360rpx;
+  background:#D8D8D8;
+  margin:0 auto;
+}
+.imgbox >image{
+  width:100%;
+  height:100%;
+  margin:0 auto;
+}
+.hotMou{
+   display:block; 
+  line-height:80rpx;
+  text-align:center;
+  height:80rpx;
+}
+.hotMou image{
+  width:224rpx;
+  height:80rpx;
+}
+.hotZx{
+  margin-bottom:0;
+}
+.hotZx view{
+  height:100%;
+}
+.hotZx image{
+  width:224rpx;
+  height:80rpx;
+}
+.messageTit{
+  padding-left:20rpx;
+}
+.messageTit text{
+    color:#000;
+    font-size:31rpx;
+}
+.seen{
+  display:flex;
+  color:#A4A4A4;
+  padding-left:20rpx;
+  font-size:20rpx;
+  line-height: 100%;
+  margin-top:35rpx;
+}
+.seen .seenImg image,.plImg image{
+  width:24rpx;
+  height:20rpx;
+}
+.seenImg,.plImg{
+  margin-right:12rpx;
+}
+.seenNum{
+  margin-right:38rpx;
+}
+
+/*page-icon.png  */
+.leftNamePri{
+  display:flex;
+  line-height:100%;
+  padding-top:53rpx;
+  padding-left:20rpx;
+}
+.proName{
+  font-size:26rpx;
+  color:#242424;
+}
+.redText{
+  font-size:22rpx;
+}
+.leftIsntr{
+  font-size:24rpx;
+  color:#969696;
+  margin-top:15rpx;
+  margin-left:20rpx;
+}
+.leftImg{
+  width:375rpx;
+  height:280rpx;
+}
+.leftImg image{
+  width:375rpx; 
+  height:280rpx;
+}
+.top .leftNamePri{
+  padding-top:65rpx;
+}
+.topImg{
+  margin-left:20rpx;
+}
+.topImg,.topImg image{
+  width:120rpx;
+  height:194rpx;
+}
+.indexName{
+  color:#34A4E4;
+}

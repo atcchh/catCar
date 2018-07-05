@@ -1,0 +1,121 @@
+<view class="container">
+  <view class="headers">
+      <view class="prot">
+        <view class="imgBox">
+            <!-- <image  bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image> -->
+            <open-data type="userAvatarUrl"></open-data>
+        </view>
+      </view>
+      <view class="name">
+        <!-- {{userName}}<text wx:if="sex==1">♀</text><text wx:else="sex!=1">♂</text> -->
+      </view>
+      <view class="userName">
+      {{userPhone}}
+      </view>
+  </view>
+  <view class="function">
+      <view class="counselor h100" bindtap='tel'>
+          <view class="counLeft">我的顾问</view>
+          <view class="counRight">{{salesman_name}} {{salesman_phone}}</view>
+      </view>
+      <view class="gray"></view>
+   <view class="integral h100" bindtap='jifen'>
+      <view class="counLeft">我的喵币</view>
+      <view class="counRight">{{score}}</view>
+      <view class="jt">
+          <image src="../images/jiantou_r.png"></image>
+      </view>
+    </view>
+    <view class="line"></view>
+    <view class="gift h100" bindtap='mymsg'>
+      <view class="counLeft">我的消息</view>
+       <view class="jt">
+          <image src="../images/jiantou_r.png"></image>
+      </view>
+    </view>
+    <view class="line"></view>
+    <view class="gift h100" bindtap='toOrder'>
+      <view class="counLeft">我的订单</view>
+       <view class="jt">
+          <image src="../images/jiantou_r.png"></image>
+      </view>
+    </view>
+    <view class="line"></view>
+        <view class="gift h100" bindtap='myGift'>
+      <view class="counLeft">我的好礼</view>
+       <view class="jt">
+          <image src="../images/jiantou_r.png"></image>
+      </view>
+    </view>
+    <view class="line"></view>
+        <view class="gift h100" bindtap='toYouhuiquan'>
+      <view class="counLeft">我的优惠券</view>
+       <view class="jt">
+          <image src="../images/jiantou_r.png"></image>
+      </view>
+    </view>
+    <view class="line"></view>
+    <view class="gift h100" bindtap='address'>
+      <view class="counLeft">管理收货地址</view>
+       <view class="jt">
+          <image src="../images/jiantou_r.png"></image>
+      </view>
+    </view>
+    <view style="width:100%;height:20rpx;background:#F2F2F2;"></view>
+    <view class="aboutUs h100" bindtap='aboutUs' >
+      <view class="counLeft">关于我们</view>
+       <view class="jt">
+          <image src="../images/jiantou_r.png"></image>
+      </view>
+    </view>
+    <view class="line"></view>
+  </view>
+
+</view>
+<view class="btnArea">
+  <navigator url="../../pages/allreadyLogin/allreadyLogin" data-url="../../pages/allreadyLogin/allreadyLogin" hover-class='none' bindtap='changePages'>
+      <view class="">
+          <view class="imgBox">
+              <image src="../images/index.png"></image>
+              <view class="navName ">首页</view>
+          </view>
+          <view>
+              
+          </view> 
+      </view>
+  </navigator>
+  <navigator url="../../pages/newCar/newCar"  data-url="../../pages/newCar/newCar" open-type="redirect" hover-class='none' bindtap='changePages'>
+      <view>
+           <view  class="imgBox">
+              <image src="../images/car.png"></image>
+              <view class="navName">
+                 底价新车
+              </view> 
+          </view>
+          
+      </view>
+  </navigator>
+  <navigator url="../../pages/shequ/shequ"  data-url="../../pages/shequ/shequ" open-type="switchTab" hover-class='none' bindtap='changePages'>
+      <view>
+           <view  class="imgBox">
+              <image src="../images/shequ.png"></image>
+                <view class="navName">
+                  社区
+                </view> 
+          </view>
+        
+      </view>
+  </navigator>
+  <navigator url="../../pages/mine/mine" data-url="../../pages/mine/mine" open-type="switchTab" hover-class='none' bindtap='changePages'>
+      <view  class="imgBox">
+           <view>
+              <image src="../images/mine_b.png"></image>
+          
+               <view class="navName indexName">
+                我的
+              </view>
+          </view>
+         
+      </view>
+  </navigator>
+</view> 

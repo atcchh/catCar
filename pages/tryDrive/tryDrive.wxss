@@ -1,0 +1,117 @@
+view{
+  color:#A8A8A8;
+}
+.askTitle{
+  margin:20rpx 0;
+  background:#fff;
+  height:120rpx;
+  display:flex;
+  padding:20rpx 20rpx; 
+}
+.askTitle .imgbox{
+  width:120rpx;
+  height:120rpx;
+  background:#ddd;
+  border-radius:3px;
+}
+.imgbox image{
+  width:100%;
+  height:100%;
+}
+.askName{
+  padding-left:20rpx;
+}
+.names{
+  color:#000;
+  font-size:30rpx;
+}
+.zdPrice{
+  font-size:24rpx;
+  display:flex; 
+  margin-top:10rpx;
+}
+.askTxt{
+  height:230rpx;
+  padding:20rpx;
+  background:#fff;
+  margin-bottom:80rpx;
+  margin-top:20rpx;
+}
+.askArea{
+  width:100%;
+  height:100%;
+  font-size:26rpx;
+}
+.btn button{
+  width:630rpx;
+  height:80rpx;
+  color:#fff;
+  line-height:80rpx;
+  border:0;
+  box-shadow:normal;
+  border-radius:5px;
+  background:#34A4E4;
+  font-size:30rpx;
+}
+.msg{
+  background:#fff;
+  padding:0 20rpx;
+  height:92rpx;
+  line-height:92rpx;
+  /* display:flex; */
+}
+.msg:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.msgLeft{
+  font-size:30rpx;
+  float:left;
+  color:#000;
+}
+.msgRight{
+  font-size:26rpx;
+  float:right;
+  color:#6C6C6C;
+}
+.msgRight input{
+  height:100%;
+  line-height:100%;
+  /* width:135rpx; */
+  text-align:right;
+}
+.detailsMsg{
+  background:#fff;
+}
+.line{
+  width:730rpx;
+  height:1px;
+  background:#F1F1F1;
+  margin-left:20rpx;
+}
+.detailsMsg .line:last-child{
+  display:none;
+}
+.section picker ,.section view{
+  color:#8D8D8D;
+}
+.jiantou{
+  width:18rpx;
+  height:28rpx;
+  margin-top:30rpx;
+}
+.jiantou image{
+  width:100%;
+  height:100%;
+}
+.msgRight{
+  display:flex;
+  height:92rpx;
+}
+.section ,.section2{
+  margin-right:25rpx;
+}
+.imgbox image{
+  border-radius: 3px;
+}

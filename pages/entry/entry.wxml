@@ -1,0 +1,112 @@
+
+<swiper indicator-dots="{{indicatorDots}}" indicatorActiveColor="{{indicatorActiveColor}}" indicatorColor="{{indicatorColor}}" circular="{{circular}}" current="{{current}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="bindchange">
+  <block wx:for="{{imgUrls}}"  wx:key="key">
+    <swiper-item>
+      <image src="{{item}}" daata-url="{{url}}" class="slide-image" width="355" height="150" bindtap='swipclick'/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="navbox">
+  <view class="nav newCar" data-url="../../pages/newCar/newCar" bindtap='changePage'>
+    <view class="img">
+        <image src="../images/Group3.png"></image>
+    </view>
+    <text>新车</text>
+  </view>
+  <view class="nav pj"  bindtap='toPeijian' data-url="../../pages/peijian/peijian">
+    <view class="img">
+        <image src="../images/Group5.png"></image>
+    </view>
+    <text>配件商城</text>
+  </view>
+  <view class="nav jf" data-url="../../pages/newCar/newCar"  bindtap='toPeijian'>
+    <view class="img">
+        <image src="../images/Group6.png"></image>
+    </view>
+    <text>积分兑换</text>
+  </view>
+  <view class="nav by" data-url="../../pages/newCar/newCar"   bindtap='toPeijian'>
+    <view class="img">
+        <image src="../images/Group_by.png"></image> 
+    </view>
+    <text>保养</text>
+  </view>
+</view>
+<view class="noobAdv" bindtap='toReg'>
+    <image src="../images/xs.png"></image>
+</view>
+<view class="Mou hotMou">
+  <view>
+      <image src="../images/peijian.png"></image>
+  </view> 
+</view>
+<view class="advContent">
+  <view class="advleft">
+      <view class="leftNamePri">
+        <view class="proName">空气净化器</view>
+        <view class="redText">55元</view>
+      </view>
+      <view class="leftIsntr">
+        保护您的健康
+      </view>
+      <view class="leftImg">
+          <image src="../images/computer.png"></image>
+      </view>
+  </view>
+  <view class="advright">
+      <view class="top">
+        <view class="topTtile">
+          <view class="leftNamePri">
+              <view class="proName">空气净化器</view>
+              <view class="redText">55元</view>
+            </view>
+            <view class="leftIsntr">
+              保护您的健康
+            </view>
+        </view>
+        <view class="topImg">
+          <image src="../images/Ipod.png"></image>
+        </view>
+      </view>
+      <view class="bottom">
+          <view class="topTtile">
+          <view class="leftNamePri">
+              <view class="proName">空气净化器</view>
+              <view class="redText">55元</view>
+            </view>
+            <view class="leftIsntr">
+              保护您的健康
+            </view>
+        </view>
+        <view class="topImg">
+          <image src="../images/Iphone.png"></image>
+        </view>
+      </view>
+  </view>
+</view>
+<view class="Mou hotZx">
+  <view>
+    <image src="../images/zixun.png"></image>
+  </view>
+</view>
+<view class="hotMessageBox">
+    <view class="hotMessage" wx:for="{{zixun}}" data-id="item.id" bindtap='seeContent'>
+        <view class="imgbox">
+            <image src="{{item.url}}"></image>
+        </view>
+        <view class="messageTit">
+            <text>{{item.title}}</text>
+        </view>
+        <view class="seen">
+            <view class="seenImg">
+                <image src="../images/eye.png"></image>
+            </view>
+            <view class='seenNum'>4733</view>
+            <view class="plImg">
+                <image src="../images/pl.png"></image>
+            </view> 
+            <view class='plNum'>20</view>
+        </view>
+    </view>
+</view>

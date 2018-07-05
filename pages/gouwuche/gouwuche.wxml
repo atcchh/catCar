@@ -1,0 +1,67 @@
+<view class="imgBox2" wx:if="{{kong}}">
+    <image src="../images/building.png"></image>
+</view>
+<view class="tishi"  wx:if="{{kong}}">
+  阿哦，购物车是空的
+</view>
+<view class="toshop"  wx:if="{{kong}}">
+    前往商城
+</view> 
+
+<!--  --------  -->
+<view class="gTitle clears">
+  <view class="left">
+    商品名称
+  </view>
+  <view class="right" bindtap='update'>
+      {{bianji}}
+  </view>
+</view>
+<view class="line"></view>
+
+
+<view class="spBox" wx:for="{{cart}}" wx:key="fa" data-id="{{item.id}}" data-productid="{{item.product_id}}" data-colorid="{{item.colorid}}" data-sizeid="{{item.size_id}}" data-skuid="{{item.sku_id}}">
+    <view class="sp clears">
+        <view class="left">
+            <view class="imgBox" style="border:1px solid #ddd;border-radius:50%;">
+                <image src="{{item.select}}" data-id="{{item.id}}"  bindtap='select2'></image>
+            </view>
+        </view>
+        <view class="middle">
+            <view class="imgBox">
+                <image src='{{item.product_img_url_small}}'></image>
+            </view>
+        </view>
+        <view class="right">
+            <view class="nameCount">
+                <view class="names">{{item.product_name}}</view>
+                <view class="guige">{{item.color_name}} {{item.size_name}}</view>
+                <view class="count clears">
+                    <view class="left">￥{{item.price}}</view>
+                    <view class="right">
+                        <button disabled='{{item.able1}}' data-pid='{{item.product_id}}' data-color='{{item.color_id}}' data-size='{{item.size_id}}' data-count='{{item.count}}'  data-id="{{item.id}}" data-user="{{item.user_id}}"  bindtap='countClose' class="fl" style="{{item.ableColor}} border-right:0;">-</button>
+                       <input value='1' type='number' data-id="{{item.id}}" value="{{item.count}}"  class="fl"></input>
+                       <button bindtap='countAdd' data-pid='{{item.product_id}}' data-color='{{item.color_id}}' data-size='{{item.size_id}}' data-count='{{item.count}}' data-id="{{item.id}}" data-user='{{item.user_id}}' class="fl" >+</button>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view> 
+    <view class="line"></view>
+</view>
+
+<view class="footer clears">
+    <view class="left" style="margin-right:12rpx;">
+        <view class="imgBox">
+            <image src="{{allsel}}" data-see="{{allsel}}"   bindtap='allsels'></image>
+        </view>
+    </view> 
+    <view style="width:83rpx;color:#000;font-size:30rpx;float:left;">全选</view>
+    <view class="middle">
+        <view>合计：<text class="redText">￥{{allprice}}</text></view>
+        <view class="">不含运费</view>
+    </view>
+    <view class="right">
+        <button bindtap='toPay' disabled='{{dis}}'>{{state}}</button>
+    </view>
+</view>

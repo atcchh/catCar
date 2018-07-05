@@ -1,0 +1,23 @@
+<view class="dizhiBox">
+    <view class="dizhi" wx:for="{{address}}" wx:if="{{item.show}}">
+        <view class="name clears">
+            <view class="left">
+            {{item.name}}
+            </view>
+            <view class="right">{{item.phone}}</view>
+        </view>
+        <view class="add">{{item.address}}</view>
+        <view class="line"></view>
+        <view class="moren clears">
+            <view class="left" bindtap='guanli' data-id='{{item.id}}' data-index="{{index}}">
+              <image src="{{item.urls}}"></image>
+            </view>
+            默认地址
+            <view class='right'>
+                <button bindtap='toUpdate' data-id="{{item.id}}" data-index="{{index}}" disabled='{{bj}}'>编辑</button>
+                <button bindtap='toDelete' data-id="{{item.id}}" data-index="{{index}}" disabled='{{item.sc}}'>删除</button>
+            </view>
+        </view>
+    </view>
+</view>
+<button class="addAdd" bindtap='add'>新增收货地址</button>

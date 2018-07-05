@@ -1,0 +1,29 @@
+<page>
+        <view class="askTitle">
+            <view class="askPortrait">
+                <view class="imgbox">
+                    <image src="{{src}}">
+                
+                    </image>
+                </view>
+            </view>
+            <view class="askName">
+                <view class="names">
+                    <!-- 奔驰S100系列 2018款 2.0T 自动挡顶级配置 -->
+                    {{type_name}}
+                </view>
+                <view class="zdPrice">
+                   <view> 指导价格：</view>
+                   <view class="redText">{{zhidao}}万</view>
+                </view>
+            </view>
+        </view>
+        <view class="askTxt">
+            <textarea bindinput="bindTextAreaBlur" class="askArea" placeholder='请输入您所期望的优惠' value="{{userText}}">
+            
+            </textarea>
+        </view>
+        <view class="btn" bindtap='sub'>
+              <button>提交</button>
+        </view> 
+</page>

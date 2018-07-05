@@ -1,0 +1,73 @@
+swiper{
+  width:100%;
+  height:300rpx;
+}
+swiper swiper-item,swiper image{
+  width:100%;
+  height:100%;
+}
+.youhuiquan{
+  background: #f2f2f2;
+  width:100%;
+  padding-top:1rpx;
+}
+.quan{
+  width:710rpx;
+  min-height:390rpx;
+  background:#fff;
+  margin:0 auto;
+  margin-top:20rpx;
+  padding-bottom:20rpx;
+  padding-top:1rpx;
+}
+.quan .imgBox{
+  width:670rpx;
+  height:240rpx;
+  margin:0 auto;
+  margin-top:14rpx;
+}
+image{
+  width:100%;
+  height:100%;
+}
+.quanName{
+  font-size:28rpx;
+  color:#575757;
+  text-align: left;
+  padding-left:20rpx;
+  margin-top:18rpx;
+}
+.quanCaozuo{
+  padding:0 20rpx;
+  display: flex;
+  margin-top:18rpx;
+}
+.quanCaozuo view{
+  width:50%;
+}
+.quanCaozuo .left{
+  color:#F65B4E;
+  font-size:26rpx;
+}
+.jifen{
+  font-size:34rpx;
+}
+.right{
+  text-align: right;
+}
+.right:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.right button{
+  width:160rpx;
+  height:60rpx;
+  background:#F65B4E;
+  font-size:26rpx;
+  color:#fff;
+  line-height:60rpx;
+  float:right;
+  display:block;
+  padding:0;
+}

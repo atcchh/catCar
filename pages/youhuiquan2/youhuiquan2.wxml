@@ -1,0 +1,11 @@
+
+
+<view>
+    <view  wx:if="{{!quan.length}}">
+        暂无优惠券信息哦～～～
+    </view>
+    <view class="quan" wx:if="{{quan.length}}" wx:for="{{quan}}" wx:key="fa" data-disid="{{item.discount_id}}" data-pici="{{item.pici_name}}" data-start="{{item.start_price}}" data-disprice="{{item.discount_price}}" bindtap='toAdd'>
+        <!--图片  -->
+        <image src='{{item.img_url}}'></image>
+      </view>
+  </view>

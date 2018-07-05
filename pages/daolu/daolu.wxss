@@ -1,0 +1,38 @@
+#myMap{
+  width:750rpx;
+  height:300rpx;
+}
+.clear:after{
+  content:'';
+  display:block;
+  clear:both;
+}
+.left{
+  float:left;
+}
+.right{
+  float:right;
+}
+.help{
+  height:60rpx;
+  line-height: 60rpx;
+  font-size:24rpx;
+  color:#8A8A8A;
+  width:710rpx;
+  padding:0 20rpx;
+}
+.clear image{
+  width:30rpx;
+  height:30rpx;
+}
+.clear{
+  width:710rpx;
+  padding:0 20rpx;
+  background:#fff;
+}
+.clear ,.clear .left,.clear .right{
+  height:120rpx;
+  line-height: 120rpx;
+  font-size:26rpx;
+  color:#000;
+}

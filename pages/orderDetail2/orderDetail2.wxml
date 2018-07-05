@@ -1,0 +1,65 @@
+<page>
+  <view class="state">
+    <view class="imgBox">
+        <image src="../images/se_red.png"></image>
+    </view>
+    <view class="stateTxt">订单已完成</view>
+  </view>
+  <view class="dizhi">
+      <view class="name">
+          <view class="imgBox">
+              <image src="../images/location.png"></image>
+          </view>
+          <view class="names">{{address[0].name}}</view>
+          <view class="tel">{{address[0].phone}}</view>
+      </view>
+      <view class="add">
+        {{address[0].address}}
+      </view>
+  </view>
+  <view class="sp">
+    <view class="title">商品详情</view>
+    <view class='spBox'>
+        <view class='left'>
+            <view class='imgBox'> <image></image></view>
+        </view>
+        <view class='right'>
+            <view class="spName">{{res2.name}}</view>
+            <view class="guige">{{res2.color_name}} {{res2.size_name}}</view>
+            <view class="pri">
+                <view class="price">￥{{res2.point_price*count}}</view>
+                <view class="count">x{{count}}</view>
+            </view>
+        </view>
+    </view>
+  </view>
+  <view class="yf">
+      <view class="yunfei clears">
+            <view class='left'>运费</view>
+            <view class='right'>￥10.00</view>
+      </view>
+      <view class="yunfei clears">
+            <view class='left'>积分</view>
+            <view class='right'>100</view>
+      </view>
+      <!-- <view class="yunfei clears">
+            <view class='left'>优惠券</view>
+            <view class='right'>-￥100.00</view>
+      </view> -->
+      <view class="yunfei clears">
+            <view class='left'>实付款</view>
+            <view class='right redText'>￥{{res2.point_price*count}}</view>
+      </view>
+  </view>
+  <view class="btnBox">
+      <button class="btns" open-type='contact' ><image src="../images/callkefu.png"></image> 联系客服</button>
+      <view>
+      <view class="btns btnlast" bindtap='phoneCall'>
+          <image  src="../images/callsome.png"></image>
+            拨打电话
+     </view>
+      </view>
+  </view>
+  <view class="orderNumber">订单编号：{{id}}</view>
+  <view class="orderTime">下单时间：{{time}}</view>
+</page>

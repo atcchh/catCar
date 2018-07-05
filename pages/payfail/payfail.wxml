@@ -1,0 +1,7 @@
+<view class="state">
+  <image src="../images/pay_fail_03.png"></image>
+</view>
+<view class="btnBox">
+  <view><button bindtap='tomall'>回到商城</button></view>
+  <view><button bindtap='goback'>重新支付</button></view>
+</view>

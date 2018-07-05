@@ -1,0 +1,48 @@
+<view class='container'>
+  <view class='model'>
+      <view class='modelTitle'>
+        <view class="carImg">
+            <image src="{{titleMsg.img_url}}"></image>
+        </view>
+        <view class="nameBox">
+          <view class="modelName">
+                    <!-- 奔驰S100系列 -->
+                     {{titleMsg.car_name}} 
+          </view>
+          <view class="price">
+              <text>
+                指导价格：
+                </text>
+                <text class='redText'>
+                  {{titleMsg.min_price}}<text>-</text>{{titleMsg.max_price}}万
+                </text>
+          </view>
+        </view>
+      </view>
+      <view class="modelsBox">
+          <view class="models" wx:for="{{carType}}" wx:key="fa" data-carname="{{titleMsg.car_name}} " data-zhidao="{{titleMsg.min_price+'-'+titleMsg.max_price}}" data-src="{{titleMsg.img_url}}" data-id="{{item.id}}" data-car_id="{{item.car_id}}" bindtap='toDetail'><!--wx:for="{{}}"-->
+              <view class="modelsLeft">
+                  <view class="modelsName">
+                   <!-- 奔驰S100系列 2018款 2.0T 自动挡顶级配置 -->
+                   {{item.type_name}}
+                  </view>
+                  <view class="priBox">
+                      <view>本店价：</view>
+                      <view class="redText">{{item.bendian_price}}万</view><!--50-100万-->
+                      <view>指导价：</view>
+                      <view class="deleteLine">{{item.zhidao_price}}万</view>
+                  </view>
+                  <view class="sale">
+                      优惠：{{(item.youhui)}}万  <image class="down" wx:if="{{item.zhidao_price-item.bendian_price>0}}" src="../images/down.png"></image>
+                  </view>
+              </view>
+              <view class="modelsRight">
+                  <view class="priBtnBox">
+                      <button class="priBtn sj" data-id="{{item.id}}" data-zhidao="{{titleMsg.min_price+'-'+titleMsg.max_price}}" data-carname="{{item.type_name}}" data-src="{{titleMsg.img_url}}" catchtap="shijia">试驾</button>
+                      <button class="priBtn xj" data-id="{{item.id}}"  data-zhidao="{{titleMsg.min_price+'-'+titleMsg.max_price}}"  data-carname="{{item.type_name}}" data-src="{{titleMsg.img_url}}"  catchtap="xunjia">询价</button>
+                  </view>
+              </view>
+          </view>
+      </view>
+  </view>
+</view>

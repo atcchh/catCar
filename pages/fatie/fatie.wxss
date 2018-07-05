@@ -1,0 +1,67 @@
+.imgBox image{
+  width:710rpx;
+  height:360rpx;
+  margin-left:20rpx;
+  background: #eee;
+}
+.imgBox{
+  background:#fff;
+}
+view{
+  background: #fff;
+}
+.uploadImg{
+   width:750rpx;
+   height:81rpx; 
+}
+.uploadImg image{
+   width:750rpx;
+   height:81rpx;
+}
+.content{
+  width:700rpx;
+  height:560rpx;
+  padding:25rpx;
+  border-bottom:1px solid #f2f2f2;
+  border-top:1px solid #f2f2f2;
+}
+.content textarea{
+  width:700rpx;
+  height:560rpx;
+  background:#fff;
+  font-size:30rpx;
+}
+.title{
+  height:100rpx;
+  line-height: 1000rpx;
+  font-size:30rpx;
+  padding-left:20rpx;
+}
+.title button{
+  width:138rpx;
+  height:70rpx;
+  border-radius: 5px;
+  background:#34A4E4;
+  line-height: 70rpx;
+  text-align: center;
+  color: #fff;
+}
+.title .left,input{
+  height:100rpx;
+}
+.left{
+  float:left;
+}
+.right{
+  float:right;
+  border-left:1px solid #f2f2f2;
+  margin-top:15rpx;
+  padding-left:20rpx;
+  margin-right:20rpx;
+}
+.img{
+  margin-top:10rpx;
+}
+.imgBox{
+  padding-top:1px;
+}

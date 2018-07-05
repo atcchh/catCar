@@ -1,0 +1,20 @@
+<map id="map" longitude="113.324520" latitude="23.099994" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 300px;"></map>
+<view class='help'>
+  快速救援电话
+</view>
+<view class='clear' bindtap='tel1'>
+  <view class='left'>
+    24小时救援电话：0574-87627006
+  </view>
+  <view class='right'>
+    <image src='../images/callsome.png'></image>
+  </view>
+</view>
+<view class='clear' bindtap='tel2'>
+  <view class='left'>
+    厂商服务热线：400-887-9988
+  </view>
+  <view class='right'>
+    <image src='../images/callsome.png'></image>
+  </view>
+</view>

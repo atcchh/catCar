@@ -1,0 +1,72 @@
+.wanna{
+  width:600rpx;
+  height:985rpx;
+  background:#fff;
+  border-radius: 10px;
+  margin:0 auto;
+
+}
+.content{
+  width:500rpx;
+  margin:0 auto;
+}
+.content .title{
+  border-bottom:2rpx solid #F1F1F1;
+  text-align:center;
+  height:140rpx;
+  line-height:140rpx;
+  color:#000;
+  font-size:34rpx;
+}
+.timeTeam{
+  display:flex;
+  margin-top:25rpx;
+}
+.time{
+  margin-top:20rpx;
+  color:#676767;
+  font-size:24rpx;
+}
+.timeTeam view{
+  border:1px solid #979797;
+  border-radius:5px;
+  height:60rpx;
+  color:#202020;
+  text-align:center;
+  line-height:60rpx;
+  font-size:24rpx;
+  margin-right:20rpx;
+  padding:0 10rpx;
+}
+.yusuan{
+  margin-top:57rpx;
+}
+.timeTeam radio-group{
+  display:flex;
+}
+.sub{
+  width:480rpx;
+  height:80rpx;
+  background:#34A4E4;
+  line-height:80rpx;
+  text-align:center;
+  font-size:30rpx;
+  color:#fff;
+  margin-top:60rpx;
+  border-radius:5px;
+}
+.wanna{
+  position: fixed;
+  top:50%;
+  left:50%;
+  margin-top:-492.5rpx;
+  margin-left:-300rpx;
+}
+.active{
+  color:#fff !important;
+  background: #F55A53;
+  border-color:#F55A53 !important;
+}
+.content >view:nth-child(2) .timeTeam view{
+  font-size:18rpx;
+}

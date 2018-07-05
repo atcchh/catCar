@@ -1,0 +1,402 @@
+swiper{
+  width:100%;
+  height:600rpx;
+}
+swiper-item,swiper image{
+  width:100%;
+  height:100%;
+}
+view{
+  color:#9C9C9C;
+  font-size:24rpx;
+}
+.modelItr{
+  width:730rpx;
+  background:#fff;
+  padding-left:20rpx;
+  margin-bottom:20rpx;
+  min-height:160rpx;
+  padding-top:1rpx;
+}
+.modelName{
+  color:#000;
+  font-size:30rpx;
+  margin-top:18rpx;
+  width:715rpx;
+}
+.prices,.sale{
+  display:flex;
+}
+.colorful{
+  display:flex;
+}
+.color{
+  width:30rpx;
+  height:30rpx;
+  margin-left:10rpx;
+}
+.red{
+  background:#F4351C;
+}
+.white{
+  background:#fff;
+}
+.black{
+  background:#000;
+}
+.zong{
+  background: #95735F;
+}
+.prices,.sale,.colorful{
+  margin-top:20rpx;
+}
+.arguments{
+  margin-top:20rpx;
+}
+.argTitle{
+  height:80rpx;
+  background:#fff;
+  display:flex;
+  padding-left:20rpx;
+  /* justify-content: space-around ;*/
+}
+.tiao{
+  height:25rpx;
+  width:4rpx;
+  background:#34A4E4;
+  margin-top:27rpx;
+}
+.argTitle text{
+  height:100%;
+  font-size:26rpx;
+  color:#000000;
+  line-height:100%;
+  margin-left:10rpx;
+}
+.basArg{
+  display:flex;
+  height:65rpx;
+  color:#9A9A9A;
+  font-size:23rpx;
+  background:#FBFBFB;
+}
+.basLeft{
+  padding-left:20rpx;
+  line-height:100%;
+}
+.basLeft,.basRight{
+  width:50%;
+  height:100%;
+}
+.basRight{
+  height:50%;
+  margin-top:3%;
+  line-height:100%;
+  padding-right:20rpx;
+}
+.basRight view{
+  float:right;
+}
+.ball{
+  height:18rpx;
+  width:18rpx;
+  border-radius:50%;
+  border:1px solid #676767;
+  justify-content: space-around;
+  display:flex;
+  line-height:18rpx;
+  margin-right:10rpx;
+}
+.zdj{
+  margin-left:20rpx;
+}
+.bpTxt{
+  margin-right:20rpx;
+}
+.bpr{
+  width:10rpx;
+  height:10rpx;
+  background:#676767;
+  border-radius:50%;
+  margin-top:4rpx;
+}
+.xpr{
+  width:10rpx;
+  height:10rpx;
+  border-radius:50%;
+  border:1px solid #676767;
+  margin-top:2rpx;
+}
+.argListChr{
+  height:82rpx;
+  margin-bottom:2rpx;
+  /* display:flex; */
+  padding:0 20rpx;
+  background:#fff;
+}
+.chrLeft{
+  float:left;
+}
+.chrRight{
+  float:right;
+}
+.argListChr .chrLeft,.argListChr .chrRight{
+  height:100%;
+  line-height:82rpx;
+  font-size:32rpx; 
+  color:#000000;
+}
+.argListChr .chrRight{
+  font-size:28rpx;
+}
+.sale .down,.down image{
+  width:14rpx;
+  height:22rpx;
+}
+.down{
+  margin-top:5rpx;
+  margin-left:10rpx;
+}
+.btnArea view{
+  color:#000;
+}
+.btnArea navigator image{
+  width:40rpx;
+  height:40rpx;
+}
+.btnArea .tryDrive{
+  height:120rpx;
+  background:#FFA124;
+  line-height:100rpx;
+  text-align: center;
+  color:#fff;
+  font-size:30rpx;
+}
+.btnArea .zixun{
+  height:120rpx;
+  background:#F65B4E;
+  line-height:100rpx;
+  text-align: center;
+  color:#fff;
+  font-size:30rpx;
+}
+.peizhi{
+  width:100%;
+  /* height:8500rpx; */
+}
+.peizhi image{
+  width:100%;
+  /* height:8500rpx; */
+  /* height:auto; */
+}
+.yin{
+  background: #ddd;
+}
+.yellow{
+  background: yellow;
+}
+.kefuBtn{
+  background:#fff;
+  padding:0;
+  height:120rpx;
+}
+.kefuBtn .navName{
+  margin-top:-33rpx;
+
+}
+.btnArea navigator:nth-child(1),.btnArea navigator:nth-child(2){
+  width:125rpx;
+}
+.btnArea navigator:nth-child(3),.btnArea navigator:nth-child(4){
+ width:500rpx;
+}
+.peizhi image{
+  /* min-height: 2000rpx; */
+}
+.price{
+  font-size:40rpx;
+  color:#F65B4E;
+  width:715rpx;
+  margin-top:32rpx;
+}
+.deline{
+  font-size:26rpx;
+  color:#989898;
+  text-decoration:line-through;
+}
+.tryDrive ,.zixun{
+  border-radius:0;
+}
+
+/*mask*/  
+.drawer_screen {  
+  width: 100%;  
+  height: 100%;  
+  position: fixed;  
+  top: 0;  
+  left: 0;  
+  z-index: 1000;  
+  background: #000;  
+  opacity: 0.2;  
+  overflow: hidden;  
+}  
+/*content*/  
+.drawer_attr_box {  
+  width: 100%;  
+  overflow: hidden;  
+  position: fixed;  
+  bottom: 0;  
+  left: 0;  
+  z-index: 1001;  
+  background: #fff;
+  height:1063rpx;
+  background:#fff;
+  /* //965rpx; */
+}  
+.line{
+  border-bottom:1px solid #f2f2f2;
+  width:730rpx;
+  margin-left:20rpx;
+}
+.drawer_content {  
+  padding: 20rpx 40rpx;  
+  height: 470rpx;  
+  overflow-y: scroll;  
+}  
+.drawer_title{  
+  padding:20rpx;  
+  font:42rpx "microsoft yahei";  
+  text-align: center;  
+}  
+image{
+  width:100%;
+  height:100%;
+}
+.title{
+  height:200rpx;
+  padding-right:20rpx;
+  display: flex;
+}
+.title>.left{
+  width:200rpx;
+  height:200rpx;
+  text-align:center;
+}
+.left .imgBox{
+  width:110rpx;
+  height:110rpx;
+  background:#ddd;
+  margin:0 auto;
+  margin-top:45rpx;
+}
+.title>.right{
+  margin-top:38rpx;
+  width:550rpx;
+}
+.right .spName2{
+  color:#000;
+  font-size:30rpx;
+}
+.clears:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.price .left{
+  float:left;
+  font-size:28rpx;
+}
+.price .right{
+  float:right;
+}
+.price>view{
+  width:50%;
+}
+.price .right{
+  text-align: right;
+  color:#969696;
+  font-size:24rpx;
+}
+.colors{
+  height:182rpx;
+  width:710rpx;
+  padding:0 20rpx;
+}
+.colors .ftitle{
+  font-size:28rpx;
+  color:#000000;
+  margin-top:25rpx;
+  margin-bottom:18rpx;
+}
+.colors .btnBox{
+  display: flex;
+}
+.btnBox>view{
+  width:120rpx;
+  height:70rpx;
+  text-align: center;
+  font-size:26rpx;
+  color:#969696;
+  line-height:70rpx;
+  border:1px solid #969696;
+  border-radius:5px;
+  margin-right:16rpx;
+}
+.inputBox{
+  display: flex;
+}
+.inputBox >button{
+  width:74rpx;
+  height:70rpx;
+  line-height: 70rpx;
+  border:1px solid #232323;
+  margin:0;
+  text-align: center;
+}
+.inputBox> button:first-child{
+  border-right:0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.inputBox>button:last-child{
+  border-left:0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.inputBox >input{
+  text-align: center;
+  height:67rpx;
+  width: 95rpx;
+  border:1px solid #232323;
+
+}
+.gongji{
+  font-size:28rpx;
+  color:#000000;
+  margin-top:25rpx;
+  margin-bottom:18rpx;
+}
+.gongjiBox{
+  height:90rpx;
+}
+.sub{
+  width:750rpx;
+  height:120rpx;
+
+}
+.sub button{
+  width:750rpx;
+  height:120rpx;
+  color: #fff;
+  font-size:30rpx;
+  background:#F65B4E;
+  text-align: center;
+  line-height: 120rpx;
+  border-radius: 0;
+}
+
+
+button{
+  padding:0;
+  background: #fff;
+}

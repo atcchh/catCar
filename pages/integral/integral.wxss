@@ -1,0 +1,39 @@
+.inergrals{
+  height:128rpx;
+  padding:0 20px;
+  width:100%;
+  margin-bottom:1px;
+  background:#fff;
+}
+.inerLeft{
+  float:left;
+}
+.inerLeft .style{
+  font-size:30rpx;
+  color:#000;
+}
+.times{
+  font-size:20rpx;
+  color:#969696;
+  margin-top:13rpx;
+}
+.style{
+  margin-top:25rpx;
+}
+.inerRight{
+  float:right;
+}
+.count{
+  height:128rpx;
+  line-height:128rpx;
+}
+inerRight,.count{
+  height:128rpx;
+  font-size:32rpx;
+}
+.blue{
+  color:#34A4E4;
+}
+.orange{
+  color:#F65B4E;
+}

@@ -1,0 +1,44 @@
+.address{
+  width:710rpx;
+  background:#fff;
+  height:160rpx;
+  margin-top:20rpx;
+  color:#000000;
+  padding:0 20rpx;
+  padding-top:18rpx;
+}
+.name{
+  font-size:30rpx;
+}
+.name .left{
+  float:left;
+  font-size:30rpx;
+}
+.name .right{
+  float:right;
+  font-size:28rpx;
+}
+.add{
+  font-size:26rpx;
+  margin-top:38rpx;
+}
+.blueText{
+  color:#34A4E4;
+}
+.btnBox{
+  width:100%;
+  margin:0 auto;
+  text-align: center;
+  height:80rpx;
+  line-height:80rpx;
+  font-size:30rpx;
+}
+.btnBox button{
+  border-radius: 8px;
+  background:#34A4E4;
+  color:#fff;
+  width:630rpx;
+}
+.addBox{
+  margin-bottom:80rpx;
+}

@@ -1,0 +1,34 @@
+<view class="login">
+    <view class="logo">
+        <view class="loginBox">
+            <image src="../images/logo4.png"></image>
+        </view>
+    </view>
+    <view class="userName inputs">
+      <view class="img">
+          <image src="../images/user.png"></image>
+      </view>
+      <view>
+          <input placeholder='请输入姓名' bindinput ="userName" data-name="userName"></input>
+      </view> 
+    </view> 
+    <view class="phoneNum inputs">
+      <view class="img">
+          <image src="../images/phone.png"></image>
+      </view>
+      <view>
+          <input placeholder='请输入手机号'  bindinput ="userPhone" data-name="userPhone"></input>
+      </view>
+      <!-- <view class="getCode" bindtap='getCode' disabled="{{disabled}}">{{getCodeNum}}</view> -->
+      <button class="getCode"  bindtap='getCode' disabled='{{disabled}}'>{{getCodeNum}}</button>
+    </view> 
+    <view class="code inputs">
+      <view class="img">
+          <image src="../images/code.png"></image>
+      </view>
+      <view>
+          <input placeholder='请输入验证码'  bindinput="userCode" data-name="userCode"></input>
+      </view> 
+    </view>
+    <view class="loginBtn" bindtap='login'>登录</view> 
+</view>

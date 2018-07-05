@@ -1,0 +1,50 @@
+<view class="userName">
+注册手机号码：{{phone}}
+</view>
+<!-- <view class="likeModel">
+  <view class="left">我喜欢的车型</view>
+  <view class="right">马自达CX4</view>
+  <view class="imgBox">
+    <image src="../images/jiantou_r.png"></image>
+  </view>
+</view> -->
+<view class="choseGuwen">选择销售顾问</view>
+<view>
+    <view class="guwenList" wx:for="{{mendian}}" wx:key="fa"><!--这里有个循环-->
+    <view class="guwen" data-show='false' bindtap="showGuwen" data-id="{{item.id}}">
+      <view class="left">
+        <view class="name">{{item.shop_name}}</view>
+        <view class="addr">
+          <view class="location"><image src="../images/location.png"></image></view>
+          <view>{{item.shop_name}}</view><!--i.location-->
+        </view>
+      </view>
+      <view class="right">
+          <image src="{{item.imgSrc}}"></image>
+      </view>
+    </view>
+
+<!-- <view wx:for="{{item.model_list}}" wx:key="items" wx:for-item="items" data-model_id="{{items.model_id}}" style="{{items.type_name}}" data-type_id="{{items.type_id}}"bindtap="selectType">{{items.model_name}}</view> -->
+
+     <view class="curList" wx:if="{{item.show1}}">
+        <view class="cur" wx:for="{{item.salesmans}}" wx:key="items" wx:for-item="items" data-id="{{items.id}}" data-shop_id="{{items.shop_id}}" bindtap='choseCur'  data-name="{{items.name}}">
+            <view class="right" wx:if="{{items.selected}}"> <!--wx:if="{{saleMan.select}}"-->
+                <image src="../images/right.png"></image>
+            </view>
+            <view class="imgBox" style="{{items.border}}">
+                <image src="{{items.img_url}}"></image>
+            </view>
+            <view class="curName">{{items.name}}</view>
+        </view>
+    </view> 
+</view>
+</view>
+<!-- 
+<view class="sub" bindtap='sub'>
+    提交
+</view> -->
+
+
+
+<button class="sub" bindtap='tiaoguo' disabled='{{abled2}}'>不选择销售</button>
+<button class="sub" bindtap='sub' disabled='{{abled}}'  style="margin-left:-340rpx;left:100%;">提交</button>

@@ -1,0 +1,28 @@
+ <view id="cz" wx:if="{{false}}">
+ <!-- 超值车型  -->
+ </view>
+ <scroll-view class="content" scroll-into-view="{{toView}}" scroll-y="true" scroll-with-animation="true">  
+  <view wx:for="{{act_addList}}">  
+    <view class="address_top" id="{{ 'inToView'+item.id}}" wx:if="{{item.city!=''}}">{{item.region}}</view>  
+    <view wx:for="{{item.city}}" wx:key="fa">  
+      <view class="address_bottom" bindtap='toPay' data-carBrand="{{item.name}}">
+      <view class="pic">
+        <image src="{{item.img_url}}"></image>
+      </view>
+      <view class="msg">
+        <view class="name">{{item.name}}</view>
+      </view>
+      </view>  
+    </view>  
+  </view>  
+</scroll-view>
+  
+<view class="orientation_region">  
+    <block>
+      <view  class="orientation_city"  catchtouchmove="scrollToViewFn" data-id="{{01}}" >#</view>
+    </block>
+   <block wx:for="{{orientationList}}" >  
+    <view class="orientation_city"  catchtap="scrollToViewFn"  data-id="{{item.id}}" >{{item.region}}</view>  
+  </block>  
+</view>     
+

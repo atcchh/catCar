@@ -1,0 +1,42 @@
+<view>
+    <view class='inputBox clears'>
+    <view class='left'>车牌号</view>
+    <view class='right'>
+      <input placeholder='请输入' style='text-align:left;' data-types='pai' bindinput='ipnutChange'></input>
+    </view>
+    <view class='right'>
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{places}}">
+          <view class="picker">
+            选择省份：{{places[index]}}
+          </view>
+      </picker>
+      <!-- <image class='jt' src='../images/jiantou_down.png'></image> -->
+    </view>
+  </view>
+  <view class='line'></view>
+  <view class='inputBox clears'>
+    <view class='left'>发动机号</view>
+    <view class='right' style='margin-right:85rpx;'><input placeholder='请输入发动机号（必填）' data-types='fadongji' bindinput='ipnutChange'style='text-align:left;'></input></view>
+  </view>
+  <view class='inputBox clears'>
+    <view class='left'>车架号</view>
+    <view class='right' style='margin-right:85rpx;'><input placeholder='请输入车架号（必填）' data-types='chejia' bindinput='ipnutChange'style='text-align:left;'></input></view>
+  </view>
+  <view class='inputBox clears'>
+    <view class='left'>车辆类型</view>
+    <view class='right' style='margin-right:280rpx;'>
+      <picker bindchange="bindPickerChange2" value="{{index}}" range="{{leixing}}">
+            <view class="picker">
+              请选择类型：{{leixing[index2]}}
+            </view>
+      </picker>
+    </view>
+  </view>
+  <view class='xsz'>
+    <image src='../images/xsz.png'></image>
+  </view>
+  <view class='shili'>行驶证示例</view>
+  <view class='btnBox'>
+    <button disabled='{{btnDis}}' bindtap='sub'>提交</button>
+  </view>
+</view>

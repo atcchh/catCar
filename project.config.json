@@ -1,0 +1,127 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.91",
+	"appid": "wx537b53af8b2033de",
+	"projectname": "%E5%96%B5%E8%BD%A6%E6%97%8F",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "allreadyLogin",
+					"pathName": "pages/allreadyLogin/allreadyLogin",
+					"query": ""
+				},
+				{
+					"id": 1,
+					"name": "zixunDetail",
+					"pathName": "pages/zixunDetail/zixunDetail",
+					"query": "id=45"
+				},
+				{
+					"id": -1,
+					"name": "mine",
+					"pathName": "pages/mine/mine",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "integral",
+					"pathName": "pages/integral/integral",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "youhuiquan",
+					"pathName": "pages/youhuiquan/youhuiquan",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "myGift",
+					"pathName": "pages/myGift/myGift",
+					"query": ""
+				},
+				{
+					"id": 6,
+					"name": "喵低价",
+					"pathName": "pages/diPay/diPay",
+					"query": "carBrand＝benci"
+				},
+				{
+					"id": -1,
+					"name": "remen",
+					"pathName": "pages/remen/remen",
+					"query": "carBrand＝benci"
+				},
+				{
+					"id": -1,
+					"name": "fatie",
+					"pathName": "pages/fatie/fatie",
+					"query": "carBrand＝benci"
+				},
+				{
+					"id": -1,
+					"name": "jifenMall",
+					"pathName": "pages/jifenMall/jifenMall",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "modelDetails",
+					"pathName": "pages/modelDetails/modelDetails",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "spDetail",
+					"pathName": "pages/spDetail/spDetail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "querenOrder2",
+					"pathName": "pages/querenOrder2/querenOrder2",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "daolu",
+					"pathName": "pages/daolu/daolu",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "aboutUs",
+					"pathName": "pages/aboutUs/aboutUs",
+					"query": ""
+				}
+			]
+		}
+	}
+}

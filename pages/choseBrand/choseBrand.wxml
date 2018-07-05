@@ -1,0 +1,76 @@
+<view class="container">
+    <view class="team">
+        <view class="letters">
+          A
+        </view>
+        <view class="modelBox">
+            <view class="models">
+              <view class="modelImg">
+                <image>
+                
+                </image>
+              </view>
+              <view class="modelName">
+                马自达
+               </view>
+            </view>
+            <view class="models">
+                <view class="modelImg">
+                   <image>
+                
+                    </image>
+                </view>
+                <view class="modelName">
+                   马自达
+                </view>
+            </view>
+            <view class="models">
+                <view class="modelImg">
+                    <image>
+                
+                    </image>
+                </view>
+                <view class="modelName">
+                    马自达
+            </view>
+        </view>
+        </view>
+    </view>
+    <view class="team">
+        <view class="letters">
+          A
+        </view>
+        <view class="modelBox">
+            <view class="models">
+              <view class="modelImg">
+                <image>
+                
+                </image>
+              </view>
+              <view class="modelName">
+                马自达
+               </view>
+            </view>
+            <view class="models">
+                <view class="modelImg">
+                   <image>
+                
+                    </image>
+                </view>
+                <view class="modelName">
+                   马自达
+                </view>
+            </view>
+            <view class="models">
+                <view class="modelImg">
+                    <image>
+                
+                    </image>
+                </view>
+                <view class="modelName">
+                    马自达
+            </view>
+        </view>
+        </view>
+    </view>
+</view>

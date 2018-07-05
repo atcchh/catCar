@@ -1,0 +1,39 @@
+.container{
+  padding:0;
+}
+.team{
+  width:100%;  
+}
+.letters{
+  height:60rpx;
+  font-size:22rpx;
+  line-height:60rpx;
+  color:#585858;
+  padding-left:20rpx;
+}
+.models{
+  height:125rpx;
+  display:flex;
+  width:100%;
+  line-height:125rpx;
+  background:#fff;
+}
+.modelImg{
+  width:80rpx;
+  height:80rpx;
+  border-radius:50%;
+  background:#ddd;
+  margin:0 20rpx;
+  margin-top:22.5rpx;
+}
+.modelImg image{
+  width:80rpx;
+  height:80rpx;
+  border-radius:50%;
+}
+.modelName{
+  width:100%;
+  color:#000000;
+  font-size:32rpx;
+  border-bottom:1rpx solid #F1F1F1;
+}

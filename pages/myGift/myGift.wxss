@@ -1,0 +1,78 @@
+.giftList{
+  width:100%;
+  margin-top:20rpx;
+}
+.gift{
+  height:185rpx;
+  background:#fff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom:4px solid #F65B4E;
+  margin-bottom:20rpx;
+}
+.giftTitle{
+  display:flex;
+}
+.giftName{
+  width:70%;
+}.giftPrice{
+  width:30%;
+}
+.giftName{
+  text-align:left;
+  font-size:30rpx;
+  color:#000;
+  padding-left:22rpx;
+  margin-top:20rpx;
+}
+.giftPrice{
+  text-align:right;
+  font-size:36rpx;
+  color:#F65B4E;
+  padding-right:13rpx;
+  margin-top:12rpx;
+}
+.giftPrice text{
+  font-size:20rpx;
+}
+.giftBottom{
+  display:flex;
+}
+.giftLeft,.giftRight{
+  width:50%;
+}
+.giftLeft{
+  padding-left:20rpx;
+}
+.condition{
+  display:flex;
+  font-size:20rpx;
+  color:#AEAEAE;
+  margin-top:45rpx;
+}
+.validTime{
+  display:flex;
+  color:#F98177;
+  font-size:20rpx;
+  margin-top:15rpx;
+}
+.giftRight view{
+  float:right;
+  width:180rpx;
+  height:82rpx;
+  margin-top:30rpx;
+  margin-right:4rpx;
+}
+.giftRight view image{
+  width:100%;
+  height:100%;
+}
+.giftRight:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.gift>image{
+  width:100%;
+  height:185rpx;
+}

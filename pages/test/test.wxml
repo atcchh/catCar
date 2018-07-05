@@ -1,0 +1,6 @@
+<view style="height:600rpx;width:100%;background:#ddd;" bindtouchstart='touchmove' bindtap='touchmove'>
+  touch test
+</view>
+<view style="height:600rpx;width:100%;background:#ddd;" bindtouchstart='touchmove' bindtap='touchmove'>
+  touch test
+</view>

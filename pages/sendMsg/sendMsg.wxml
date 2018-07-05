@@ -1,0 +1,14 @@
+<view class='input-button clears'>
+  <view class='left'>
+      <input placeholder='请输入标题（限6-30个字）'></input>
+  </view>
+  <view class='right'>
+    <button>发表</button>
+  </view>
+</view>
+<view class='msg'>
+  <textarea placeholder='请输入正文'></textarea>
+</view>
+<view class='img'>
+  <image src='../images/addpic.png'></image>
+</view>

@@ -1,0 +1,45 @@
+<!-- <view>
+    <view style="width:328rpx;height:208rpx;margin:0 auto;margin-top:495rpx;">
+        <image style="width:100%;height:100%;" src="../images/building.png"></image>
+    </view>
+    <view class="text" style="color:676767;font-size:28rpx;text-align:center;">建设中，敬请期待！</view>
+</view> -->
+
+<view  class='title clears' bindtap='toselect'>
+  <view class='left'>
+    <image src='../images/bao1.png'></image>
+  </view>
+  <view class='middle'>
+    <view class='t1'>添加我的爱车</view>
+    <view>养车·省钱省心</view>
+  </view>
+  <view class='carBox'>
+      <view class='carname'>{{xinghao}}</view>
+      <view class='carname'>{{pai}}</view>
+  </view>
+  <view class='right'>
+    <image src='../images/jiantou_r.png'></image>
+  </view>
+</view>
+<view>
+  <view class='funs'>
+    <view>
+      <view class='clears' data-url='../../pages/weizhang/weizhang' bindtap='tourls'>
+        <view><image src='../images/bao4.png' mode="widthFix"></image></view>
+        <view class='txt'>违章查询</view>
+      </view>
+      </view>
+      <view class='clears' data-url='../../pages/baoyangyuyue/baoyangyuyue' bindtap='tourls'>
+        <view><image src='../images/bao3.png' mode="widthFix" ></image></view>
+        <view class='txt'>保养预约</view>
+      </view>
+      <view class='clears' data-url='../../pages/baoxian/baoxian' bindtap='tourls'>
+        <view><image src='../images/bao2.png' mode="widthFix"></image></view>
+        <view class='txt'>保险购买</view>
+      </view>
+      <view class='clears' data-url='../../pages/daolu/daolu' bindtap='tourls'>
+        <view><image src='../images/bao5.png' mode="widthFix"></image></view>
+        <view class='txt'>道路救援</view>
+      </view>
+  </view>
+</view>

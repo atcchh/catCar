@@ -1,0 +1,31 @@
+<view class='orderBox'>
+  <view class="order" wx:for="{{order}}" wx:key="fa">
+    <view class="time-state clears">
+      <view class='time'>{{item.add_date}}</view>
+      <view class='state'>{{item.state}}</view>
+    </view>
+    <view class='sp clears'>
+      <view class='left'>
+        <view class='img'>
+          <image src='{{item.details[0].img_url_small}}'></image>
+        </view>
+      </view>
+      <view class='right'>
+        <view class='spName'>
+          {{item.details[0].product_name}}
+        </view>
+        <view class='classes'>
+          {{item.details[0].color_name}} {{item.details[0].size_name}}
+        </view>
+        <view class='price-count clears'>
+          <view class="left">￥{{item.price}}</view>
+          <view class='right'>X 1</view>
+        </view>
+      </view>
+    </view>
+    <view class='foot'>
+      共一件商品 合计：￥{{item.price}}（含运费￥10.00）
+    </view>
+ </view>
+  <view class='footers'>没有更多订单了哦~</view>
+</view>

@@ -1,0 +1,35 @@
+<view class="container">
+    <view class="choseGender">
+        <view class="genderTitle">
+            让喵车更懂你
+        </view>
+        <view class="gender">
+          <view class="boys" bindtap='choseGender1'>
+            <view class="selects" wx:if="{{selectMan}}">
+                <image src="../images/right.png"></image>
+            </view>
+            <view class="headers">
+                <image src="../images/boy.png"></image>
+            </view>
+            <view class="names">帅哥</view>
+          </view>
+          <view class="lines"></view>
+          <view class="girls"  bindtap='choseGender2'>
+            <view class="selects selects2"  wx:if="{{selectWoman}}">
+                <image src="../images/se_red.png"></image>
+            </view>
+            <view class="headers">
+                <image src="../images/girl.png"></image>
+            </view>
+            <view class="names">美女</view>
+          </view>
+        </view>
+        <view class="genderType">
+              <button id="buy0" class="{{activeState21}}" bindtap='selectState1'>我要买车</button>
+              <button id="buy1" class="{{activeState22}}"  bindtap='selectState2'>我已有车</button>
+        </view>
+        <view class="next">
+              <button bindtap='next'>下一步</button>
+        </view>
+    </view>
+</view>

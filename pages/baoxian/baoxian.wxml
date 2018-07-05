@@ -1,0 +1,53 @@
+<view>
+  <view class='inputBox clears'>
+    <view class='left'>爱车型号</view>
+    <view class='right'><input placeholder='请输入' data-types='carType' bindinput='ipnutChange'></input></view>
+  </view>
+  <view class='line'></view>
+    <view class='inputBox clears'>
+    <view class='left'>车牌号</view>
+    <view class='right'>
+      <input placeholder='请输入' style='text-align:left;' data-types='pai' bindinput='ipnutChange'></input>
+    </view>
+    <view class='right'>
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{places}}">
+          <view class="picker">
+            选择省份：{{places[index]}}
+          </view>
+      </picker>
+      <!-- <image class='jt' src='../images/jiantou_down.png'></image> -->
+    </view>
+  </view>
+  <view class='line'></view>
+  <view class='inputBox clears'>
+    <view class='left'>车主姓名</view>
+    <view class='right'><input placeholder='请输入' data-types='userNames' bindinput='ipnutChange'></input></view>
+  </view>
+  <view class='line'></view>
+  <view class='inputBox clears'>
+    <view class='left'>车主手机号</view>
+    <view class='right'><input placeholder='请输入' data-types='userPhone' bindinput='ipnutChange'></input></view>
+  </view>
+  <view class='line'></view>
+  <view class='inputBox clears'>
+    <view class='left'>保险种类</view>
+    <view class='right'>
+      <!-- <input placeholder='请输入' data-types='ordertime' bindinput='ipnutChange'></input> -->
+      <picker bindchange="bindPickerChange2" value="{{index}}" range="{{baoxian}}">
+        <view class="picker">
+            请选择{{baoxian2[index]}}
+        </view>
+      </picker>
+      </view>
+  </view>
+  <view class='line'></view>
+  <view class='inputBox areaBox clears'>
+    <textarea bindinput='inputChange' data-types='beizhu' placeholder='备注'></textarea>
+  </view>
+  <view class='kefu'>
+    <button open-type="contact" style='background:transparent;line-height:26rpx;color:#5DB5E7;font-size:26rpx;'><image src='../images/callus2.png' style='width:40rpx;height:40rpx;display:inline-block;margin-top:4px;'></image> 了解更多，联系我们</button>
+  </view>
+  <view class='btnBox'>
+    <button disabled='{{btnDis}}' bindtap='sub'>提交保养预约</button>
+  </view>
+</view>

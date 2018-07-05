@@ -1,0 +1,13 @@
+.active2{
+  background:#F65B4E;
+  color:#fff;
+}
+.selects image{
+  width:30rpx;
+  height:30rpx;
+  position:absolute;
+  left:35%;
+}
+.selects2 image{
+  left:77%;
+}

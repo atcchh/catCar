@@ -1,0 +1,36 @@
+<view class="container">
+  <view class="carList">
+    <view class="carBrand" wx:for="{{carList}}" wx:key="item">
+      <view class="newCarTitle">
+         <view class="logos"><image src="{{item.img_url}}"></image></view>
+        <view class="brandName">{{item.brand_name}}</view> 
+      </view>
+      <view class="brands">   <!--wx:for="{{item.model_list}}" wx:key="items" wx:for-item="items" -->
+            <view class="car" wx:for="{{item.car_list}}" wx:key="items" wx:for-item="items" data-car_id="{{items.car_id}}" bindtap='toDetail'>
+            <view class="carImg">
+                <image src="{{items.img_url}}"></image>
+            </view>
+            <view class="carMsg">
+                <view class="carType">
+                {{items.car_name}}
+                    <!-- 奔驰S100系列 -->
+                </view>
+                <view class="carPrice">
+                    <!-- 50-100万 -->
+                    {{items.min_price}}<text>-</text>{{items.max_price}}万
+                </view>
+                <view class="carClass">
+                    <text>{{items.car_type_count}}</text><text>种车型</text>
+                </view>
+            </view>
+        </view>
+      </view>
+    </view>
+
+  </view>
+</view>
+
+
+
+
+

@@ -1,0 +1,24 @@
+<view class="container">
+    <view class="cong">
+        恭喜您，注册成功！
+    </view>
+    <view class="gift">
+        <view>
+              <image src="../images/gift.png"></image>
+        </view>
+    </view>
+    <view class="doneTxt">
+        <view class="txt1">
+                <view class="ballRed">
+                    <text></text>
+                </view>
+                <view>您的</view>
+                <view class="redText">{{giftName}}</view>
+                <view>新手体验大礼包已放入账户！</view>
+        </view>
+
+    </view>
+    <view class="doneBtn" bindtap='gobackindex'>
+      <button>返回首页</button>
+    </view>
+</view>

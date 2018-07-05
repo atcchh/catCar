@@ -1,0 +1,110 @@
+.changes{
+  width:750rpx;
+  height:100rpx;
+  background:#fff;
+  display:flex;
+}
+.changes view{
+  width:375rpx;
+  text-align: center;
+  height:100rpx;
+  line-height: 100rpx;
+  color:#000;
+  font-size:30rpx;
+}
+.active{
+  color:#34A4E4;
+}
+.activeLine{
+  background:#34A4E4;
+  height:1px;
+  margin:0 auto;
+  width:85rpx;
+}
+.changes2{
+  display: flex;
+}
+.changes2>view{
+  width:375rpx;
+  text-align: center;
+}
+.changes view view{
+  width:85rpx;
+}
+.active{
+  color:#34A4E4;
+}
+.pl::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.pl{
+  width:730rpx;
+  margin-left:20rpx;
+  height:185rpx;
+}
+.pl .left{
+  margin-top:20rpx;
+  height:165rpx;
+  width:80rpx;
+}
+.left image{
+  width:60rpx;
+  height:60rpx;
+  background:#ddd;
+  border-radius: 50%;
+}
+.pl .right{
+  float:right;
+  margin-top:22rpx;
+  width:630rpx;
+  margin-left:20rpx;
+}
+.left{
+  float:left;
+}
+.right .title{
+  font-size:24rpx;
+  color:#000;
+}
+.right .title text{
+  color:#676767;
+}
+.right .h-nr{
+  font-size:23rpx;
+  color:#000;
+  margin-top:22rpx;
+}
+.time{
+  color:#969696;
+  float:right;
+  font-size:16rpx;
+  margin-top:12rpx;
+  text-align: right;
+  margin-right:20rpx;
+  height:16rpx;
+  line-height: 16rpx;
+}
+.line{
+  float:left;
+  border-top:1px solid #eee;
+  height:1px;
+  width:730rpx;
+  margin-left:20rpx;
+}
+.pinglun{
+  background:#fff;
+}
+
+.zan .title{
+  margin-top:40rpx;
+}
+.lengthCurt{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  width: 305rpx;
+  display:inline-block;
+  line-height:24rpx;
+}

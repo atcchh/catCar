@@ -1,0 +1,181 @@
+<view class='address' wx:if="{{!address}}" bindtap='toAdd'>
+  <view class="addBox">
+    <view class='left'>
+      <view class='imgBox'>
+          <image src="../images/location.png"></image>
+      </view>
+      <text>  暂无地址</text>
+    </view>
+    <view class='right' style="height:100%;line-height:185rpx;" >
+      <view  style="height:100%;line-height:185rpx;" ><text>赶快去添加吧</text> </view>
+      <view class='imgBox'  style="height:100%;line-height:185rpx;">
+        <image style="width:14rpx;height:28rpx;" src="../images/jiantou_r.png"></image>
+      </view>
+    </view>
+  </view>
+</view>
+<image class="line" src="../images/line.png" wx:if="{{!address}}"></image>
+<!-- 选取地址后 -->
+<view class='address clears yx'  wx:if="{{address}}" bindtap='changeAdd' >
+  <view class="left">
+      <view class="top clears ">
+          <view class="names"><image src="../images/location.png"></image>{{address.name}}</view>
+          <view class="tel">{{address.phone}}</view>
+      </view>
+      <view class="middle">
+          {{address.address}}
+      </view>
+  </view>
+  <view class="right">
+      <view class='imgBox' style="height:100%;line-height:185rpx;">
+          <image src="../images/jiantou_r.png"></image>
+      </view>
+  </view>
+</view>
+<image class="line" src="../images/line.png"  wx:if="{{address}}"></image>
+  <view class="bgw pl20">
+      <view class="spTiele">商品名称</view>
+  <view class="lines"></view>
+  <view class="sp" wx:if='{{!productList}}'>
+    <view class="left">
+      <view class='imgBox'>
+          <image src="{{des}}"></image>
+      </view>
+    </view>
+    <view class='right'>
+        <view class="spName">{{res2.name}}</view>
+         <view class="guige">{{res2.size_name}} {{res2.color_name}}</view>
+        <view class="spPrice clears">
+          <view class='left'>￥{{allprice}}</view>
+          <view class="right">ⅹ{{count}}</view>
+        </view>
+    </view>
+  </view>
+  <view class="sp clears" wx:for='{{productList}}'>
+    <view class="left">
+      <view class='imgBox'>
+          <image src="{{item.product_img_url_small}}"></image>
+      </view>
+    </view>
+    <view class='right'>
+        <view class="spName">{{item.product_name}}</view>
+         <view class="guige">{{item.size_name}} {{item.color_name}}</view>
+        <view class="spPrice clears">
+          <view class='left'>￥{{(((item.price)*100)*item.count)/100}}</view>
+          <view class="right">ⅹ{{item.count}}</view>
+        </view>
+    </view>
+  </view>
+
+  </view>
+  <view class="bgw">
+      <view class='songStyle inputBox'  bindtap="powerDrawer" data-statu="open"  data-click="0">
+    <view class="left">
+        <view>送货方式：</view> 
+    </view>
+    <view class="right">
+        <view class="rtext" style="line-height:80rpx;"> {{songType}}</view>
+        <view class='imgBox'>
+          <image src="../images/jiantou_r.png"></image>
+        </view>
+    </view>
+  </view>
+  <view class="lines"></view>
+   <view class='songStyle inputBox' bindtap="powerDrawer" data-statu="open" data-click="1">
+    <view class="left">
+        <view>优惠券：</view> 
+    </view>
+     <view class="right">
+      <view class="rtext" style='line-height:77rpx;'> {{pici}}</view> 
+        <view class='imgBox'>
+          <image src="../images/jiantou_r.png"></image>
+        </view>
+    </view>
+  </view> 
+  <view class="lines"></view>
+  <view class="inputBox liuyan">
+    <view class="left">
+        买家留言：
+    </view>
+    <view class="right">
+        <input placeholder='140个字内'></input>
+    </view>
+  </view>
+  <view class="lines"></view>
+  </view>
+  <view class="bgw">
+        <view class="used" style="margin-top:20rpx;">
+      <view class="usedBox clears">
+        <view class="left">积分：</view>
+        <view class="right">
+          <text class="redText">{{point}}积分</text>
+        </view>
+      </view>
+      <view class="usedBox clears">
+        <view class="left">商品：</view>
+        <view class="right">
+          <text class="redText">￥{{allprice}}</text>
+        </view>
+      </view>
+      <view class="usedBox clears ">
+        <view class="left">运费：</view>
+        <view class="right">
+          <text class="redText">{{yunfei}}</text>
+        </view>
+      </view>
+  </view>
+  </view>
+
+  
+<view animation="{{animationData}}" class="drawer_attr_box" wx:if="{{showModalStatus}}">  
+     <view class="donghuatitle"  wx:if="{{!hui}}">选择配送方式</view>
+     <view class="xuanxiang clears"   wx:if="{{!hui}}" bindtap='selWay' data-type="zi">
+        <view class='left'>
+            到店自取
+        </view>
+        <view class="right clears">
+            <view class="imgBox ">
+                  <image src="{{srcZi}}"></image>
+            </view>
+        </view>
+     </view>
+     <view class="line"   wx:if="{{!hui}}"></view>
+     <view class="xuanxiang clears" wx:if="{{!hui}}" bindtap='selWay' data-type="kd">
+        <view class='left'>
+            普通快递（10元）
+        </view>
+        <view class="right clears">
+            <view class="imgBox">
+                <image src="{{srcKd}}"></image>
+            </view>
+        </view>
+     </view>
+       <!-- -------------------------- -->
+     <view class="donghuatitle" wx:if="{{hui}}">选择优惠券</view>
+     <view class="quan clears"  wx:if="{{hui}}">
+        <view class="left">
+          <view class="redText huiNum"><text class="">￥100</text>元</view>
+          <view class="tiaojian">订单满100元可用</view>
+          <view class="times">使用期限 1000-11-11</view>
+        </view>
+        <view class="right">
+            <view class="imgBox">
+                <image></image>
+            </view>
+        </view>
+     </view>
+     <view class="quan"  wx:if="{{hui}}" wx:for ='{{youhuiquans}}'wx:key='fa' wx:if="{{allprice<item.start_price}}" data-id="{{item.id}}" data-pici='{{item.pici_name}}' bindtap='selquan'>
+     <image src='{{item.img_url}}'></image>
+     <view class="line"  wx:if="{{hui}}"></view>
+     </view>
+     <view class="kuaidiSub">
+        <button bindtap='powerDrawer'  data-statu="close"  data-click="1">确定</button>
+     </view>
+</view>  
+
+  <view class="drawer_screen" bindtap="powerDrawer" data-statu="close" wx:if="{{showModalStatus}}"></view>  
+  <view class="footer clears">
+      <view class=" right btnBox" ><button class="btnBox right" bindtap='toPay' disabled='{{disable}}'>提交订单</button> </view>
+      <view class="left">合计：<text class="redText">￥{{heprice}}</text></view>
+  </view>
+

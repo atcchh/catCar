@@ -1,0 +1,40 @@
+<view class="inputBox i1" bindtap='tosel'> 
+  <view class="left">你想喵的车型：</view>
+   <view class="right fr r1" style="text-align:right;padding-right:15rpx;">{{car_brand}}</view>  
+  <view class="imgBox fr"><image src="../images/jiantou_r.png"></image></view>
+</view>
+<view class="inputBox i2">
+  <view class="left">车型型号：</view>
+   <view class="right"><input placeholder='请输入具体车型号' placeholder-style='color:#000;' bindinput ="carName" data-name="carName"></input> </view>
+</view>
+<view class="inputBox i3">
+  <view class="left">官方指导价：</view>
+   <view class="right">--</view>
+</view>
+<view class="inputBox i4 qiwang">
+  <view class="left">期望价格：</view>
+   <view class="right"><input placeholder='请输入'  placeholder-style='color:#000;'  class='in1' bindinput ="qi1" type='number'  data-name="qi1"></input><view class="gang"></view><input  placeholder-style='color:#000;'  class='in2' type="number" placeholder='请输入'   bindinput ="qi2" data-name="qi2"></input></view>
+</view>
+<view class="inputBox i1">
+  <view class="left">姓名</view>
+   <view class="right fr r1"><input bindinput ="getName"  placeholder-style='color:#000;'  data-name="getName"></input> </view>
+  <view class="imgBox fr"><image src="../images/jiantou_r.png"></image></view>
+</view>
+<view class="inputBox i1">
+  <view class="left">手机号码</view>
+   <view class="right fr r1"><input maxlength="11"  placeholder-style='color:#000;'  type='number' bindinput ="phone" data-name="phone"></input> </view>
+  <view class="imgBox fr"><image src="../images/jiantou_r.png"></image></view>
+</view>
+<view class="inputBox itexta">
+  <textarea placeholder='请输入其他备注'  placeholder-style='color:#000;'  bindinput ="beizhu" data-name="beizhu"></textarea>
+</view>
+<view class="inputBox i1 yufu">
+  <view class="left">预付金：</view>
+   <view class="right fr r1" style='font-size:26rpx;'>￥500元</view>
+  <image src="../images/sel.png" class="selImg"></image>
+</view>
+<view class='tishi'>
+  <view>提示：支付预定金，锁定符合您期望价格区间内的爱车，自愿支付24小时内未喵到在期望价格区间内的爱车，自动退换预定金。</view>
+  <view class="states">当前有{{suiji}}人同时在喵低价   |   24小时内告知您询价底价</view>
+</view>
+<button class="sub" bindtap='dijia' disabled='{{can}}'>提交，喵低价</button>  

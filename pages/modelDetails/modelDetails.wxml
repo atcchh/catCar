@@ -1,0 +1,153 @@
+<swiper indicator-dots="{{indicatorDots}}" indicatorActiveColor="{{indicatorActiveColor}}" indicatorColor="{{indicatorColor}}" circular="{{circular}}" current="{{current}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="bindchange">
+  <block wx:for="{{imgUrls}}"  wx:key="key">
+    <swiper-item>
+      <image src="{{item}}" daata-url="{{url}}" class="slide-image" width="355" height="150" bindtap='swipclick'/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="modelItr">
+    <view class="modelName">
+       <!-- 梅赛德斯奔驰  -->
+      {{carDetail.type_name}}
+    </view>
+    <view class="prices">
+      <view>本店价：</view>
+      <view class="redText">
+      <!-- 5万  -->
+      {{carDetail.bendian_price}}万
+      </view>
+      <view class="zdj"> 指导价：</view>
+      <view class="deleteLine">
+      <!-- 10万 -->
+      {{carDetail.zhidao_price}}万
+      </view>
+    </view>
+    <view class="sale">
+      <view>优惠：</view>
+      <view>
+      {{carDetail.youhui}}万
+      </view>
+      <view class="down"><image src="../images/down.png"></image></view>
+    </view>
+    <view class="colorful">
+        <view>颜色：</view>
+        <view class="color red"></view>
+        <view class="color white"></view>
+        <view class="color yellow"></view>
+        <view class="color yin"></view>
+    </view>
+
+</view>
+<view class="arguments">
+    <view class="argTitle">
+        <view class="tiaoBox">
+          <view class="tiao"></view>
+        </view>
+        <text>
+            配置参数
+        </text>
+    </view>
+    <!-- <view class="basArg">
+          <view class="basLeft">
+             <text>
+                 基本参数
+             </text>
+          </view>
+          <view class="basRight">
+                <view>无</view>
+                <view>-</view>
+                <view>选配</view>
+                <view class="xp ball">
+                    <view class="xpr"></view>
+                </view>  
+                <view class="bpTxt">标配</view>
+                <view class="bp ball">
+                    <view class="bpr"></view>
+                </view>
+          </view>
+    </view> -->
+    <view class="argList">
+        <!-- <view class="argListChr">
+            <view class="chrLeft">
+                参考价（万元）
+            </view>
+            <view class="chrRight">
+                {{carDetail[0].zhidao_price}}
+            </view>
+        </view>
+        <view class="argListChr">
+            <view class="chrLeft">
+                国家/地区补助（万元）
+            </view>
+            <view class="chrRight">
+                -
+            </view>
+        </view>
+        <view class="argListChr">
+            <view class="chrLeft">
+                厂商指导价（万元）
+            </view>
+            <view class="chrRight">
+                {{carDetail[0].zhidao_price}}
+            </view>
+        </view>
+        <view class="argListChr">
+            <view class="chrLeft">
+                厂商
+            </view>
+            <view class="chrRight">
+                北京
+            </view>
+        </view> -->
+        <view class="">
+          <view class="peizhi">
+              <image src="{{pz}}" mode='widthFix'></image>
+          </view> 
+        </view>
+    </view>
+
+</view>
+<view class="btnArea">
+  <navigator url="">
+      <view class="" bindtap='tel'>
+          <view class="imgBox">
+              <image src="../images/telephone.png"></image>
+              <view class="navName indexName">电话</view>
+          </view>
+          <view>
+              
+          </view> 
+      </view>
+  </navigator>
+  <navigator>
+  <button open-type='contact' class="kefuBtn">
+      <view class="kefu">
+           <view  class="imgBox">
+              <image src="../images/message.png"></image>
+              <view class="navName">
+                 微信
+              </view> 
+          </view>
+      </view> 
+  </button>
+       <!-- <view>
+           <view  class="imgBox">
+              <image src="../images/message.png"></image>
+              <view class="navName">
+                 微信
+              </view> 
+          </view>
+      </view>  -->
+  </navigator>
+  <navigator url="" open-type="switchTab">
+      <view class="tryDrive" bindtap='shijia' data-src="{{src}}" data-id="{{id}}" data-car_id="{{car_id}}"  data-carname=" {{carDetail.type_name}}">
+      预约试驾
+      </view>
+  </navigator>
+  <navigator url="" open-type="switchTab">
+      <view class='zixun' bindtap='xunjia'  data-src="{{src}}" data-id="{{id}}" data-car_id="{{car_id}}" data-carname=" {{carDetail.type_name}}">
+        咨询底价
+      </view>
+  </navigator>
+</view>

@@ -1,0 +1,203 @@
+.tie{
+  width:710rpx;
+  margin:0 auto;
+  padding:0 20rpx;
+  padding-top:45rpx;
+  /* padding-bottom:120rpx; */
+  background: #fff;
+}
+.left{
+  float:left;
+}
+.tou{
+  margin-top:45rpx;
+}
+.right{
+  float:right;
+}
+.tou ,.tou>view{
+  font-size:26rpx;
+  height:60rpx;
+  line-height: 60rpx;
+}
+.tou image{
+  background:#eee;
+  width:60rpx;
+  height:60rpx;
+  border-radius:50%;
+}
+.content{
+  line-height: 26rpx;
+  font-size:26rpx;
+  color:#000;
+  margin-top:22rpx;
+  min-height:26rpx;
+  overflow:hidden;
+  width:710rpx;
+}
+.imgBox .img{
+  margin-top:18rpx;
+  width:710rpx;
+  background: #ddd;
+  height:360rpx;
+
+}
+.img image{
+  width:100%;
+  height:100%;
+}
+.bottoms{
+  height:120rpx;
+  position:fixed;
+  left:0;
+  top:100%;
+  margin-top:-120rpx;
+  background: #fff;
+  line-height: 120rpx;
+}
+.bottoms view{
+  height:120rpx;
+  background: #fff;
+  line-height: 120rpx;
+}
+.bottoms input{
+  background:#f2f2f2;
+  height:80rpx;
+  border-radius: 30px;
+  display: inline-block;
+  margin-top:20rpx;
+  padding-left:20rpx;
+  width:525rpx;
+  margin-left:20rpx;
+}
+.clear:after{
+  content:'';
+  display:block;
+  clear:both;
+}
+.bottoms .right{
+  width:187rpx;
+  background: #fff;
+}
+
+.right image{
+  width:40rpx;
+  height:40rpx;
+  display: inline-block;
+}
+.times{
+  height:22rpx;
+  line-height: 22rpx;
+  font-size:22rpx;
+  color:#A0A0A0;
+  padding-left:10rpx;
+  margin-top:14rpx;
+}
+.bottoms .right button{
+  background:#fff;
+  line-height: 120rpx;
+  height:120rpx;
+  margin-left:30rpx;
+  float:left;
+  width:70rpx;
+}
+.bottoms .right view{
+  float:left;
+}
+.pinglunBox{
+  padding-bottom:120rpx;
+}
+.pinglun{
+  min-height:158rpx;
+  background:#f8f8f8;
+  width:730rpx;
+  margin-left:20rpx;
+  padding-top:20rpx;
+  border-bottom:1px solid #ededed;
+}
+
+.pinglun .left image{
+  width:60rpx;
+  height:60rpx;
+  border-radius: 50%;
+  background:#ddd;
+}
+.top{
+  display:flex;
+}
+.right{
+  float:right;
+}
+.right image{
+  width:30rpx;
+  height:30rpx;
+}
+
+.pinglunBox{
+  width:750rpx;
+  background:#f8f8f8;
+}
+.plnr{
+  width:100%;
+  font-size:26rpx;
+  margin-top:25rpx;
+  color:#000;
+}
+.huifu{
+  height:80rpx;
+  background:#f8f8f8;
+  color:#000;
+  font-size:22rpx;
+  line-height: 80rpx;
+  padding-left:20rpx;
+  width:730rpx;
+}
+.huifu text{
+  color:#63B9E9;
+}
+.plzan{
+  font-size:16rpx;
+  color:#969696;
+}
+button image,.plzan image{
+  background:transparent;
+}
+.pinglunNum{
+  width:710rpx;
+  padding:0 20rpx;
+  height:100rpx;
+  line-height: 100rpx;
+  color:#000;
+  font-size:32rpx;
+  background:#F8F8F8;
+}
+.names{
+  color:#000000;
+  font-size:26rpx;
+  padding-left:10rpx;
+  line-height: 26rpx;
+  height:26rpx;
+}
+.left{
+  float:left;
+}
+.middle{
+  width:570rpx;
+}
+.zan2{
+  font-size:20rpx;
+  color:#989898;
+  height:30rpx;
+  line-height: 30rpx;
+}
+.pinglun .right image{
+  width:30rpx;
+  height:30rpx;
+}
+.bottoms image{
+  width:40rpx;
+  height:40rpx;
+}
+.zans button:first-child{
+  margin-left:0;
+}

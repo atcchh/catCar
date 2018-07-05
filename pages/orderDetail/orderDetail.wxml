@@ -1,0 +1,65 @@
+<page>
+  <view class="state">
+    <view class="imgBox">
+        <image></image>
+    </view>
+    <view class="stateTxt">订单已完成</view>
+  </view>
+  <view class="dizhi">
+      <view class="name">
+          <view class="imgBox">
+              <image src="../images/location.png"></image>
+          </view>
+          <view class="names">lucy</view>
+          <view class="tel">13333333333</view>
+      </view>
+      <view class="add">
+        北京市海淀区上地环岛东北京市海淀区上地环岛东1002
+      </view>
+  </view>
+  <view class="sp">
+    <view class="title">商品详情</view>
+    <view class='spBox'>
+        <view class='left'>
+            <view class='imgBox'> <image></image></view>
+        </view>
+        <view class='right'>
+            <view class="spName">{{sku_idF.name}}</view>
+            <view class="guige">{{sku_idF.color_name}} {{sku_idF.size_name}}</view>
+            <view class="pri">
+                <view class="price">￥{{sku_idF.point_price*count}}</view>
+                <view class="count">x{{count}}</view>
+            </view>
+        </view>
+    </view>
+  </view>
+  <view class="yf">
+      <view class="yunfei clears">
+            <view class='left'>运费</view>
+            <view class='right'>￥10.00</view>
+      </view>
+      <view class="yunfei clears">
+            <view class='left'>积分</view>
+            <view class='right'>100</view>
+      </view>
+      <!-- <view class="yunfei clears">
+            <view class='left'>优惠券</view>
+            <view class='right'>-￥100.00</view>
+      </view> -->
+      <view class="yunfei clears">
+            <view class='left'>实付款</view>
+            <view class='right redText'>￥{{sku_idF.point_price*count}}</view>
+      </view>
+  </view>
+  <view class="btnBox">
+      <button class="btns" open-type='contact' ><image src="../images/callkefu.png"></image> 联系客服</button>
+      <view>
+      <view class="btns btnlast">
+          <image  src="../images/callsome.png"></image>
+            拨打电话
+     </view>
+      </view>
+  </view>
+  <view class="orderNumber">订单编号：1000000</view>
+  <view class="orderTime">下单时间：2017-11-11</view>
+</page>

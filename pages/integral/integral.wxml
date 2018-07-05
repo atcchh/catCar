@@ -1,0 +1,39 @@
+<view class="container">
+    <view class="inergrals floats" wx:if="{{details.length}}" wx:for="{{details}}" wx:key="fa">
+        <view class="inerLeft">
+            <view class="style">
+                <text wx:if="{{item.score>0}}">签到</text>
+                <text wx:if="{{item.score<0}}">积分兑换</text>
+            </view>
+            <view class="times">
+                {{item.str_add_date}}
+            </view>
+        </view>
+        <view class="inerRight">
+            <view class="count " style="{{item.color}}">
+                <text wx:if="{{item.score>0}}">+ </text>
+                <text wx:if="{{item.score<0}}"></text>
+                <text>{{item.score}}</text>
+            </view>
+        </view>
+    </view>
+    <view wx:if="{{!details.length}}">
+        暂无喵币，赶紧去签到领喵币吧～～～
+    </view>
+     <!-- <view class="inergrals floats">
+        <view class="inerLeft">
+            <view class="style">
+                积分兑换
+            </view>
+            <view class="times">
+                2017-10-10 17：17
+            </view>
+        </view>
+        <view class="inerRight">
+            <view class="count blueText">
+                <text>- </text>
+                <text>50</text>
+            </view>
+        </view>
+    </view>  -->
+</view>

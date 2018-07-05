@@ -1,0 +1,40 @@
+.bianji{
+  width:630rpx;
+  height:80rpx;
+  line-height: 80rpx;
+  color:#fff;
+  background: #34A4E4;
+  text-align: center;
+  margin-top:80rpx;
+  font-size:30rpx;
+}
+.inputBox ,.dz{
+  background: #fff;
+  padding:0 20rpx;
+}
+.inputBox{
+  height:92rpx;
+  line-height:92rpx;
+  color:#000;
+  font-size:30rpx;
+  display:flex;
+}
+textarea{
+  width:100%;
+  height:270rpx;
+  font-size:26rpx;
+  color:#B9B9B9;
+  padding-top:18rpx;
+}
+input{
+  width:370rpx;
+  height:92rpx;
+  line-height: 92rpx;
+  
+  display:inline-block;
+}
+.line{
+  width:730rpx;
+  margin-left:20rpx;
+  border-top:1px solid #f2f2f2;
+}

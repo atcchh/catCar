@@ -1,0 +1,88 @@
+.title>view{
+  float:left;
+}
+.title{
+  width:750rpx;
+  height:175rpx;
+  background:#fff;
+  margin-top:10rpx;
+}
+.title > .right{
+  float:right;
+  height:170rpx;
+  line-height: 170rpx;
+  margin-right:20rpx;
+}
+.title .left{
+  margin-top:42rpx;
+  margin-left:50rpx;
+}
+.title .left image{
+  width:92rpx;
+  height:74rpx;
+}
+.title .right image{
+  width:16rpx;
+  height:28rpx;
+}
+.middle{
+  height:132rpx;
+  margin-top:42rpx;
+  margin-left:40rpx;
+}
+.middle view{
+  font-size:24rpx;
+  color:#0F0F0F;
+}
+.middle .t1{
+  font-size:26rpx;
+  font-weight:bold;
+  color:#000000;
+}
+.carname{
+  font-size:24rpx;
+  color:#000;
+}
+.carBox{
+  height:132rpx;
+  margin-top:40rpx;
+  margin-left:114rpx;
+}
+.funs{
+  height:200rpx;
+  width:650rpx;
+  background:#fff;
+  margin-top:20rpx;
+  padding:0 50rpx;
+}
+.funs>view{
+  width:25%;
+  height:200rpx;
+  line-height: 100%;
+  text-align: center;
+  float:left;
+  margin-top:45rpx;
+}
+.funs view:nth-child(1) image{
+  width:64rpx;
+  height:80rpx;
+}
+.funs view:nth-child(2) image{
+  width:80rpx;
+  height:76rpx;
+}
+.funs view:nth-child(3) image{
+  width:80rpx;
+  height:76rpx;
+}
+.funs view:nth-child(4) image{
+  width:80rpx;
+  height:68rpx;
+}
+.funs view{
+  font-size:24rpx;
+  color:#000;
+}
+.txt{
+  margin-top:10rpx;
+}

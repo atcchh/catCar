@@ -1,0 +1,77 @@
+.login{
+  background: #fff;
+  width:600rpx;
+  height:655rpx;
+  border-radius:8px;
+  margin:0 auto;
+  padding-top:1rpx;
+  position:fixed;
+  top:50%;
+  left:50%;
+  margin-left:-300rpx;
+  margin-top:-327.5rpx;
+}
+.login .loginBox{
+  width:250rpx;
+  height:90rpx;
+  margin:0 auto;
+  margin-top:75rpx;
+}
+.loginBox image{
+  width:100%;
+  height:100%;
+}
+.inputs{
+  display: flex;
+  width:480rpx;
+  margin:0 auto;
+  border-bottom:2rpx solid #f2f2f2;
+  height:80rpx;
+  line-height:80rpx;
+}
+.inputs .img{
+  width:30rpx;
+  height:36rpx;
+  margin-right:55rpx;
+}
+.img image{
+  width:100%;
+  height:100%;
+}
+.inputs input{
+  height:80rpx;
+  line-height:80rpx;
+  font-size:24rpx;
+  color:#969696;
+}
+.getCode{
+  border:2rpx solid #34A4E4;
+  color:#34A4E4;
+  height:50rpx;
+  line-height:50rpx;
+  text-align:center;
+  margin-top:15rpx;
+  font-size: 24rpx;
+  border-radius:3px;
+  width:140rpx;
+  padding: 0;
+  background:transparent;
+}
+.userName{
+  margin-top:45rpx;
+}
+.phoneNum,.code{
+  margin-top:8rpx;
+}
+.loginBtn{
+  width:480rpx;
+  height:80rpx;
+  font-size:30rpx;
+  color:#fff;
+  background: #34A4E4;
+  text-align:center;
+  line-height:80rpx;
+  border-radius: 5px;
+  margin:0 auto;
+  margin-top:40rpx;
+}

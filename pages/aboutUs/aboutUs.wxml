@@ -1,0 +1,23 @@
+<view class="container">
+    <view class="logo">
+       <image src="../images/logo4.png"></image>
+    
+    </view> 
+    <view class="txt">
+        购车，先上喵车试驾
+    </view>
+    <view class="bb">
+      V 0.9.1
+    </view>
+    <view class="t1">
+        汽车生活一站式服务平台
+    </view>
+    <view class="t2">
+      使命：让人们便捷，低价买到满意的车
+    </view>
+    <view class="callUs">
+      <view>联系我们：</view>
+      <view>电话：13056845687</view>
+      <view>邮箱：643221252@qq.com</view>
+    </view>
+</view>

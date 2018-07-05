@@ -1,0 +1,94 @@
+.dizhiBox{
+  padding-top:1rpx;
+}
+.dizhi{
+  padding:0 20rpx;
+  margin-top:20rpx;
+  width:710rpx;
+  height:270rpx;
+  font-size:26rpx;
+  color:#000000;
+  background:#fff;
+  padding-top:1rpx;
+}
+.line{
+  width:730rpx;
+  border-top:1px solid #f2f2f2;
+  margin-left:20rpx;
+}
+
+.name .left{
+  font-size:30rpx;
+}
+.name .left{
+  float:left;
+}
+.name .right{
+  float:right;
+}
+.name{
+  margin-top:18rpx;
+}
+.add{
+  margin-top:45rpx;
+  margin-bottom:20rpx;
+}
+.moren >.left{
+  float:left;
+}
+.moren>view{
+  height:100%;
+}
+.moren >.right{
+  float:right;
+}
+.moren>.left{
+  width:44rpx;
+  height:44rpx;
+  border:2px solid #f2f2f2;
+  border-radius: 50%;
+  margin-top:40rpx;
+  margin-right:10rpx;
+  line-height:44rpx;
+}
+.moren>.imgBox{
+  width:44rpx;
+  height:44rpx;
+  margin-top:30rpx;
+}
+.moren{
+  height:130rpx;
+  line-height: 130rpx;
+}
+image{
+  width:100%;
+  height:100%;
+}
+.right >button{
+  width:100rpx;
+  height:60rpx;
+  font-size:28rpx;
+  text-align: center;
+  line-height: 60rpx;
+  padding:0;
+  color:#141414;
+  background:#fff;
+  margin-right:20rpx;
+  border:1px solid #676767;
+  display:block;
+  margin-top:32rpx;
+}
+.moren .right{
+  width:220rpx;
+  display: flex;
+}
+.addAdd{
+  width:630rpx;
+  height:80rpx;
+  line-height: 80rpx;
+  color:#fff;
+  background: #34A4E4;
+  text-align: center;
+  margin-top:80rpx;
+  font-size:30rpx;
+}

@@ -1,0 +1,29 @@
+<view class="inputBox">
+<view class="title">姓名：</view>
+    <view class="inputBox">
+         <input bindinput ="userName" data-name="userName"></input>
+    </view>
+</view>
+<view class='line'></view>
+<view class="inputBox">
+    <view class="title"> 联系电话：</view> 
+    <view class="inputBox">
+         <input bindinput ="userPhone" data-name="userPhone"></input>
+    </view>
+</view>
+<view class="line"></view>
+<view class="inputBox">
+    <view class="title"> 地区：</view> 
+    <view class="inputBox" style="width:550rpx;">
+      <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+        <view class="picker">
+          {{region[0]}}-{{region[1]}}-{{region[2]}}
+        </view>
+      </picker>
+    </view>
+</view>
+<view class="line"></view>
+<view class="dz">
+    <textarea placeholder='请填写您的详细收货地址' bindinput ="userAdd" data-name="userAdd"></textarea>
+</view>
+<button class="bianji" bindtap='save' disabled='{{cansave}}'>保存</button>

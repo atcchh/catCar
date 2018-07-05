@@ -1,0 +1,197 @@
+
+<swiper indicator-dots="{{indicatorDots}}"indicatorActiveColor="{{indicatorActiveColor}}" indicatorColor="{{indicatorColor}}" circular="{{circular}}" current="{{current}}"
+  autoplay="{{autoplay}}" interval="{{interval}}"  duration="{{duration}}" bindchange="bindchange">
+  <block wx:for="{{imgUrls}}"  wx:key="key" >
+    <swiper-item>
+      <image src="{{item.img_url}}" data-type="{{item.type}}" data-id="{{item.content_id}}"  class="slide-image" width="355" height="150" bindtap='swipclick'/>
+    </swiper-item>
+  </block>
+    <view class="dots">  
+    <block wx:for="{{imgUrls}}" wx:key="unique">  
+      <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view>  
+    </block>  
+  </view>  
+</swiper>
+<view class="navbox">
+  <view class="nav newCar" data-url="../../pages/newCar/newCar" bindtap='changePage'>
+    <view class="img">
+        <image src="../images/Group3.png"></image>
+    </view>
+    <text>喵新车</text>
+  </view>
+  <view class="nav pj"  bindtap='changePage' data-url="../../pages/mall/mall" bindtap='changePage2'>
+    <view class="img">
+        <image src="../images/Group5.png"></image>
+    </view>
+    <text>特惠商城</text>
+  </view>
+  <view class="nav jf" data-url="../../pages/jifenMall/jifenMall"  bindtap='changePage2'>
+    <view class="img">
+        <image src="../images/Group6.png"></image>
+    </view>
+    <text>喵币兑换</text>
+  </view>
+  <view class="nav by" data-url="../../pages/baoyang/baoyang"   bindtap='changePage2'>
+    <view class="img">
+        <image src="../images/Group_by.png"></image> 
+    </view>
+    <text>养车</text>
+  </view>
+</view>
+
+<view class="getJf" bindtap='qiandaos'>
+  <!-- <view>
+      {{qiandao}}
+  </view> -->
+  <button disabled='{{canQian}}'>{{qiandao}}</button>
+</view>
+<view class="Mou hotMou">
+  <view>
+      <image src="../images/peijian.png"></image>
+  </view> 
+</view>
+<view class="advContent" wx:if="{{newUser}}">
+  <view class="advleft">
+      <view class="leftNamePri">
+        <view class="proName">{{remen[0].name}}</view>
+        <view class="redText">{{remen[0].price}}</view>
+      </view>
+      <view class="leftIsntr">
+        
+      </view>
+      <view class="leftImg">
+          <image src="{{remen[0].img_url_small}}"></image>
+      </view>
+  </view>
+  <view class="advright">
+      <view class="top">
+        <view class="topTtile">
+          <view class="leftNamePri">
+              <view class="proName">空气净化器</view>
+              <view class="redText">55元</view>
+            </view>
+            <view class="leftIsntr">
+              保护您的健康
+            </view>
+        </view>
+        <view class="topImg">
+          <image src="../images/Ipod.png"></image>
+        </view>
+      </view>
+      <view class="bottom">
+          <view class="topTtile">
+          <view class="leftNamePri">
+              <view class="proName">空气净化器</view>
+              <view class="redText">55元</view>
+            </view>
+            <view class="leftIsntr">
+              保护您的健康
+            </view>
+        </view>
+        <view class="topImg">
+          <image src="../images/Iphone.png"></image>
+        </view>
+      </view>
+  </view>
+</view>
+<view class="proBottomList">
+  <view class='proBox'>
+  <view class="pro" bindtap='toSp' wx:for='{{remen}}' wx:key='son'  data-id="{{item.id}}">
+      <view class="proName">{{item.name}}</view>
+      <view class="imgBox">
+          <image src="{{item.img_url_small}}"></image>
+      </view> 
+      <view class="redText">{{item.price}}</view>
+  </view>
+  </view>
+</view>
+  <view class="Mou hotZx">
+    <view>
+      <image src="../images/zixun.png"></image>
+    </view>
+  </view>
+<view class="hotMessageBox">
+    <view class="hotMessage" wx:for="{{zixun}}" wx:key="fa" data-id="{{item.id}}" bindtap='seeContent'>
+        <view class="messageTit">
+            <text>{{item.title}}</text>
+        </view>
+        <view class="imgbox">
+            <image src="{{item.img_url}}"></image>
+        </view>
+        <view class="seen">
+            <view class="seenImg">
+                <image src="../images/eye.png"></image>
+            </view>
+            <view class='seenNum'>{{item.id }}</view>
+            <!-- <view class="plImg">
+                <image src="../images/pl.png"></image>
+            </view> 
+            <view class='plNum'>20</view> -->
+        </view>
+    </view>
+</view>
+
+
+
+<view class="btnArea">
+  <navigator  url="../../pages/allreadyLogin/allreadyLogin" hover-class='none' bindtap='changePages'>
+      <view class="">
+          <view class="imgBox">
+              <image src="../images/index_b.png"></image>
+              <view class="navName indexName">首页</view>
+          </view>
+          <view>
+              
+          </view> 
+      </view>
+  </navigator>
+  <navigator  url="../../pages/newCar/newCar" data-url="../../pages/newCar/newCar" open-type="redirect" hover-class='none' bindtap='changePages'>
+      <view>
+           <view  class="imgBox">
+              <image src="../images/car.png"></image>
+              <view class="navName">
+                 底价新车
+              </view> 
+          </view>
+          
+      </view>
+  </navigator>
+   <navigator  url="../../pages/diPay/diPay" data-url="../../pages/diPay/diPay" open-type='navigate' hover-class='none' bindtap='changePages' class="">
+      <!-- <view class="dijia">
+          <view>喵底价</view>
+          <text>+</text>
+      </view> -->
+      <view>
+           <view  class="imgBox">
+              <image src="../images/dijia.png"></image>
+                <view class="navName">
+                  喵底价
+                </view> 
+          </view>
+      </view>
+      <!-- // dijia.png -->
+  </navigator>
+<!--../../pages/diPay/diPay  -->
+  <navigator url="../../pages/shequ/shequ"  data-url="../../pages/shequ/shequ" hover-class='none' bindtap='changePages'>
+      <view>
+           <view  class="imgBox">
+              <image src="../images/shequ.png"></image>
+                <view class="navName">
+                  社区
+                </view> 
+          </view>
+      </view>
+  </navigator>
+  <navigator url="../../pages/mine/mine" data-url="../../pages/mine/mine" hover-class='none' bindtap='changePages'>
+      <view  class="imgBox">
+           <view>
+              <image src="../images/mine.png"></image>
+          
+               <view class="navName">
+                我的
+              </view>
+          </view>
+         
+      </view>
+  </navigator>
+</view> 

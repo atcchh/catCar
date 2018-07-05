@@ -1,0 +1,118 @@
+.changes{
+  width:750rpx;
+  height:100rpx;
+  background:#fff;
+  display:flex;
+}
+.changes view{
+  width:375rpx;
+  text-align: center;
+  height:100rpx;
+  line-height: 100rpx;
+  color:#000;
+  font-size:30rpx;
+}
+.active{
+  color:#34A4E4;
+}
+.activeLine{
+  background:#34A4E4;
+  height:1px;
+  margin:0 auto;
+  width:85rpx;
+}
+.changes2{
+  display: flex;
+}
+.changes2>view{
+  width:375rpx;
+  text-align: center;
+}
+.changes view view{
+  width:85rpx;
+}
+.active{
+  color:#34A4E4;
+}
+.pl::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.pl{
+  width:730rpx;
+  margin-left:20rpx;
+  height:185rpx;
+}
+
+.left{
+  float:left;
+}
+.line{
+  float:left;
+  border-top:1px solid #eee;
+  height:1px;
+  width:730rpx;
+  margin-left:20rpx;
+}
+.pinglun{
+  background:#fff;
+}
+
+.zan .title{
+  margin-top:40rpx;
+}
+.right{
+  float:right;
+}
+.right image{
+  width:240rpx;
+  height:125rpx;
+  background:#eee;
+}
+.left image{
+  width:24rpx;
+  height:20rpx;
+  margin-left:5rpx;
+}
+.pl .left,.pl .right{
+  margin-top:20rpx;
+}
+.left .title{
+  line-height: 38rpx;
+  height:26rpx;
+  color:#000;
+  min-height: 95rpx;
+}
+.see{
+  font-size:20rpx;
+  color:#A4A4A4;
+  margin-top:30rpx;
+  margin-bottom:30rpx;
+}
+.pl{
+  min-height: 205rpx;
+}
+.pl .right{
+  margin-right:20rpx;
+}
+/* scroll */
+.scroll-header{
+  background: #fff;
+  display: flex;
+  white-space: nowrap;  
+  border-bottom:1px solid #f2f2f2;
+}
+.scroll-header view{
+  width:auto;
+  height:78rpx;
+  line-height: 78rpx;
+  text-align: center;
+  margin:0 40rpx;
+  font-size:26rpx;
+  color:#000;
+  display: inline-block; 
+}
+.sc-active{
+  border-bottom:1px solid #34A4E4;
+}

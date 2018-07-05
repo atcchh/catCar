@@ -1,0 +1,108 @@
+.container{
+  padding:0;
+}
+.model{
+  margin-top:20rpx;
+  width:100%;
+  /* padding:0 20px; */
+}
+.modelTitle{
+  height:120rpx;
+  display:flex;
+  background:#fff;
+  width:100%;
+  padding:20rpx;
+  margin-bottom:20rpx;
+  /* justify-content: space-around; */
+}
+.modelsBox{
+  width:100%;
+}
+.carImg{
+  margin-right:30rpx;
+}
+.carImg image{
+  width:120rpx;
+  height:120rpx;
+  background:#ddd;
+  border-radius:3px;
+}
+.nameBox{
+  height:100%;
+}
+.modelName{
+  height:40rpx;
+  font-size:30rpx;
+}
+.price{
+  height:30rpx;
+  font-size:30rpx;
+  display:flex;
+  color:#676767;
+}
+.redText{
+  color:#F65B4E;
+  margin-right:20rpx;
+}
+.models{
+  display:flex;
+  height:180rpx;
+  margin-bottom:2rpx;
+  padding:0 20rpx;
+  background:#fff;
+  width:100%;
+}
+.modelsLeft{
+  font-size:24rpx;
+  color:#676767;
+  width:80%;
+}
+.modelsName{
+  color:#070707;
+  font-size:25rpx;
+  margin-top:20rpx;
+}
+
+.priBox{
+  display:flex;
+  margin-top:30rpx;
+}
+.sale{
+  margin-top:10rpx;
+}
+.priBtnBox{
+ /* margin-left:-53rpx; */
+
+}
+.priBtn{
+  width:112rpx;
+  height:44rpx;
+  background:transparent;
+  border-radius:3px;
+  font-size:23rpx;
+  margin:0;
+  padding:0;
+  line-height:44rpx;
+  margin-top:30rpx;
+}
+.sj{
+  border:1px solid #34A4E4;
+  color:#34A4E4;
+}
+.xj{
+  border:1px solid #F65B4E;
+  color:#F65B4E;
+}
+.modelsRight{
+  width:20%;
+}
+button::after {
+  border:0;
+}
+.down,.down>image{
+  width:16rpx;
+  height:22rpx;
+}
+.down{
+  margin-top:1rpx;
+}

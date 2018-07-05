@@ -1,0 +1,35 @@
+.state{
+  width:100%;
+  height:616rpx;
+}
+image{
+  width:100%;
+  height:100%;
+}
+.btnBox view{
+  width:630rpx;
+  margin:0 auto;
+}
+.btnBox{
+  background:#fff;
+}
+.btnBox button{
+  width:100%;
+  height:100%;
+  text-align: center;
+  line-height:80rpx;
+  font-size:30rpx;
+  color:#F65B4E;
+  border:1px solid #F65B4E;
+  border-radius:4px;
+  background:#fff;
+  margin-bottom:40rpx;
+  padding:0;
+}
+.btnBox view:last-child button{
+  background:#F65B4E;
+  color:#fff;
+}
+page{
+  background:#fff;
+}

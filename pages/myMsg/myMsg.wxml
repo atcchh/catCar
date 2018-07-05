@@ -1,0 +1,38 @@
+<view class='changes'>
+  <view class="{{active}}" catchtap ='lucy' data-type='1'>评论我的</view>
+  <view class="{{active1}}" catchtap ='lucy' data-type='0'>回复我的</view>
+</view>
+<view class='changes2'>
+  <view class=''>
+    <view class='{{activeline}}'></view>
+  </view>
+  <view class=''>
+    <view class='{{activeline1}}'></view>
+  </view>
+</view>
+<view class='pinglun' wx:if="{{active}}">
+  <view class='pl' wx:for='{{pllist}}'wx:key='son'>
+    <view class='left'>
+      <image src='{{item.head_img}}'></image>
+    </view>
+    <view class='right'>
+      <view class='title'>{{item.comment_user_name}} 评论了帖子《<text>{{item.shequ_title}}</text>》</view>
+      <view class='h-nr'>{{item.content}}</view>
+    </view>
+    <view class='time'>{{item.add_date}}</view>
+    <view class='line'></view>
+  </view>
+</view>
+<view class='pinglun' wx:if="{{!active}}">
+  <view class='pl' wx:for='{{reply}}' wx:key='son'>
+    <view class='left'>
+      <image src=''></image>
+    </view>
+    <view class='right'>
+      <view class='title'>{{item.reply_user_name}} 回复了 <text class='lengthCurt'>{{item.comment_content}}</text></view>
+      <view class='h-nr'>{{item.reply}}</view>
+    </view>
+    <view class='time'>{{item.str_add_date}}</view>
+    <view class='line'></view>
+  </view>
+</view>

@@ -1,0 +1,35 @@
+<view class='scroll'>
+  <scroll-view scroll-x class="scroll-header">
+<!-- <image wx:for='{{item.img_urls}}' wx:key="items" src="{{j}}" wx:for-index="indexs" wx:for-item="j"></image> -->
+    <view wx:for="{{types}}" class="scroll-view-item {{j.sactive}}" wx:key='items' wx:for-index="indexs" wx:for-item='j' data-type='{{j.id}}' data-id="{{indexs}}" bindtap='lucy'>{{j.type_name}}</view>
+  </scroll-view>
+</view>
+<view class='pinglun' wx:if="{{active}}">
+  <!-- <view class='pl clear'>
+    <view class='left'>
+      <view class='title'>标题</view>
+      <view class='see'>
+        <image src='../images/eye.png'></image>\t20 \t \t \t \t<image src='../images/pl.png'></image>\t 20
+      </view>
+    </view>
+    <view class='right'>
+        <image src=''></image>
+    </view>
+    <view class='line'></view>
+  </view> -->
+  <view class='pl clear' wx:for='{{pl}}' wx:key="fa" data-id='{{item.id}}' bindtap='toDetail'>
+    <view class='left'>
+      <view class='title'>{{item.title}}</view>
+      <view class='see'>
+        <image src='../images/eye.png'></image>{{item.see}}<image src='../images/pl.png' style='display:inline-block;margin-left:20rpx;'></image>{{item.pinglun}}
+      </view>
+    </view>
+    <view class='right'>
+        <image src='{{item.img_url}}'></image>
+    </view>
+    <view class='line'></view>
+  </view>
+</view>
+<view class='pinglun' wx:if="{{!active}}">
+
+</view>

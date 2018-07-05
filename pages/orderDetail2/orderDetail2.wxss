@@ -1,0 +1,163 @@
+.state{
+  height:160rpx;
+  line-height: 160rpx;
+  font-size:32rpx;
+  color:#fff;
+  display: flex;
+  background: #F87E74;
+  padding:0 20rpx;
+  width:710rpx;
+  vertical-align: bottom;
+  margin-bottom:20rpx;
+}
+image{
+  width:100%;
+  height:100%;
+}
+.state .imgBox{
+  width:50rpx;
+  height:50rpx;
+  margin-top:12.5rpx;
+}
+.dizhi{
+  height:178rpx;
+  background: #fff;
+  padding-top:1rpx;
+  margin-bottom:20rpx;
+}
+.name{
+  display:flex;
+  padding:0 20rpx;
+  font-size:28rpx;
+  margin-top:16rpx;
+  color:#343434;
+}
+.name .imgBox{
+  width:24rpx;
+  height:29rpx;
+  margin-right:12rpx;
+}
+.names{
+  margin-right:100rpx;
+}
+.add{
+  padding-left:35rpx;
+  font-size:28rpx;
+  color:#343434;
+  margin-top:22rpx;
+}
+.title{
+  height:70rpx;
+  color:#000000;
+  font-size:24rpx;
+  line-height:70rpx;
+  background: #fff;
+  padding-left:20rpx;
+}
+.spBox{
+  background:#f8f8f8;
+  height:210rpx;
+  display: flex;
+}
+.spBox .left{
+  width:200rpx;
+}
+.spBox .right{
+  width:550rpx;
+}
+.spBox .left .imgBox{
+  width:110rpx;
+  height:114rpx;
+  margin-top:40rpx;
+  margin-left:45rpx;
+}
+.spBox .right .spName{
+  font-size:26rpx;
+  color:#262626;
+  margin-top:18rpx;
+  padding-right:20rpx;
+}
+.guige{
+  font-size:24rpx;
+  color:#676767;
+  margin-top:16rpx;
+}
+.pri{
+  font-size:22rpx;
+  color:#000000;
+  margin-top:42rpx;
+}
+.clears:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.pri view:first-child{
+  float:left;
+}
+.pri view:last-child{
+  float:right;
+}
+.yf{
+  height:228rpx;
+  margin-bottom:2rpx;
+  background: #fff;
+  padding:0 20rpx;
+  font-size:24rpx;
+  color:#000000;
+}
+.yunfei{
+  height:25%;
+  line-height:57rpx;
+  vertical-align: bottom;
+}
+.yunfei>view:first-child{
+  float:left;
+}
+.yunfei >view:last-child{
+  float:right;
+}
+.btnBox{
+  color:#000000;
+  font-size:26rpx;
+  height:100rpx;
+  line-height:100rpx;
+  display: flex;
+  text-align: center;
+  background: #fff;
+}
+.btnBox>view{
+  width:50%;
+}
+.btnBox:view:first-child{
+  padding-right:2rpx solid #f2f2f2;
+}
+.orderNumber ,.orderTime{
+  font-size:24rpx;
+  color:#676767;
+  margin-top:24rpx;
+  padding-left:20rpx;
+}
+.btns,.btns>view{
+  width:375rpx;
+  line-height: 100rpx;
+  background: #fff;
+  border:0;
+  border-radius: 0;
+  border-right:1px solid #f2f2f2;
+  font-size:28rpx;
+}
+.btns image{
+  height:28rpx;
+  width:28rpx;
+}
+.btnlast{
+  border:0;
+}
+.btnlast image{
+  display:inline-block;
+  margin-top:4rpx;
+}
+.stateTxt{
+  padding-left:20rpx;
+}

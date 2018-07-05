@@ -1,0 +1,59 @@
+view{
+  background:#fff;
+}
+.input-button{
+  height:100rpx;
+  width:750rpx;
+  border-bottom:2px solid #F1F1F1;
+}
+.left{
+  float:left;
+}
+.right{
+  float:right;
+}
+.input-button .right button{
+    width:140rpx;
+    height:70rpx;
+    line-height: 70rpx;
+    color:#fff;
+    background:#34A4E4;
+    font-size:30rpx;
+}
+.input-button .right{
+    margin-top:15rpx;
+    padding:0 20rpx;
+    border-left:1px solid #F1F1F1;
+}
+.input-button input{
+  font-size:32rpx;
+  line-height: 32rpx;
+  width:500rpx;
+}
+.input-button .left{
+  margin-top:27rpx;
+  padding-left:20rpx;
+}
+.msg{
+  width:750rpx;
+  height:610rpx;
+  border-bottom:1px solid #f1f1f1;
+}
+textarea{
+  width:710rpx;
+  height:570rpx;
+  font-size:30rpx;
+  padding:20rpx;
+}
+.img{
+  height:80rpx;
+  padding:0 20rpx;
+  width:710rpx;
+  padding-top:1rpx;
+}
+.img image{
+  width:40rpx;
+  height:32rpx;
+  display:block;
+  margin-top:24rpx;
+}

@@ -1,0 +1,27 @@
+<page>
+  <view class="addBox">
+    <!-- <view class="address">
+      <view class="name clears">
+          <view class="left">lucy</view>
+          <view class='right'>13333333333</view>
+      </view>
+      <view class="add">
+        <text class="blueText">[默认地址]</text>
+        <text>中南海一号</text>
+      </view>
+    </view> -->
+    <view class="address" wx:for="{{address}}" wx:key="fa" bindtap='goback' data-name="{{item.name}}" data-address="{{item.address}}" data-phone="{{item.phone}}" data-id="{{item.id}}">
+      <view class="name clears">
+          <view class="left">{{item.name}}</view>
+          <view class='right'>{{item.phone}}</view>
+      </view>
+      <view class="add">
+        <!-- <text class="blueText">[默认地址]</text> -->
+        <text>{{item.address}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="btnBox">
+    <button bindtap='guanli'>管理收货地址</button>
+  </view>
+</page>

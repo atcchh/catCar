@@ -29,7 +29,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
+			"current": 16,
 			"list": [
 				{
 					"id": -1,
@@ -120,6 +120,17 @@
 					"name": "aboutUs",
 					"pathName": "pages/aboutUs/aboutUs",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "baoyang",
+					"pathName": "pages/baoyang/baoyang",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "daolu",
+					"pathName": "pages/daolu/daolu"
 				}
 			]
 		}

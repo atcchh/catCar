@@ -7,7 +7,8 @@
         </view>
       </view>
       <view class="name">
-        <!-- {{userName}}<text wx:if="sex==1">♀</text><text wx:else="sex!=1">♂</text> -->
+        {{userName}}
+        <!-- <text wx:if="sex==1">♀</text><text wx:else="sex!=1">♂</text> -->
       </view>
       <view class="userName">
       {{userPhone}}

@@ -43,16 +43,19 @@ Page({
 
   },
   onLoad:function(e){
-    // wx.getLocation({
-    //   type: 'wgs84',
-    //   success: function (res) {
-    //     var latitude = res.latitude
-    //     var longitude = res.longitude
-    //     var speed = res.speed
-    //     var accuracy = res.accuracy
-    //     console.log(res);
-    //   }
-    // })
+    var me = this;
+    wx.getLocation({
+        type: 'wgs84',
+        altitud: true,
+        success: function (res) {
+            var latitude = res.latitude
+            var longitude = res.longitude
+            me.setData({
+                longitude: longitude,
+                latitude: latitude
+            });
+        }
+    })
   },
   tel1: function (e) {
       wx.makePhoneCall({

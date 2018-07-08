@@ -45,8 +45,8 @@ Page({
   onLoad:function(e){
     var me = this;
     wx.getLocation({
-        type: 'wgs84',
-        altitud: true,
+        // type: 'wgs84',
+        type: 'gcj02',
         success: function (res) {
             var latitude = res.latitude
             var longitude = res.longitude
@@ -54,6 +54,11 @@ Page({
                 longitude: longitude,
                 latitude: latitude
             });
+            // wx.openLocation({
+            //     latitude: latitude,
+            //     longitude: longitude,
+            //     scale: 28
+            // })
         }
     })
   },

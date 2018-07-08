@@ -152,7 +152,7 @@
      </view>
        <!-- -------------------------- -->
      <view class="donghuatitle" wx:if="{{hui}}">选择优惠券</view>
-     <view class="quan clears"  wx:if="{{hui}}">
+     <!-- <view class="quan clears"  wx:if="{{hui}}">
         <view class="left">
           <view class="redText huiNum"><text class="">￥100</text>元</view>
           <view class="tiaojian">订单满100元可用</view>
@@ -163,11 +163,16 @@
                 <image></image>
             </view>
         </view>
-     </view>
-     <view class="quan"  wx:if="{{hui}}" wx:for ='{{youhuiquans}}'wx:key='fa' wx:if="{{allprice<item.start_price}}" data-id="{{item.id}}" data-pici='{{item.pici_name}}' bindtap='selquan'>
-     <image src='{{item.img_url}}'></image>
-     <view class="line"  wx:if="{{hui}}"></view>
-     </view>
+     </view> -->
+    <view class="quan"  wx:if="{{hui}}" wx:for="{{youhuiquans}}" wx:key="{{item.id}}" wx:if="{{allprice > item.start_price}}" data-id="{{item.id}}" data-pici='{{item.pici_name}}' bindtap='selquan'>
+        <image src='{{item.img_url}}'></image>
+        <view class="right clears">
+            <view class="imgBox">
+                <image src="{{item.id === discount_id ? '../images/se_red.png' : ''}}"></image>
+            </view>
+        </view>
+        <view class="line"  wx:if="{{hui}}"></view>
+    </view>
      <view class="kuaidiSub">
         <button bindtap='powerDrawer'  data-statu="close"  data-click="1">确定</button>
      </view>

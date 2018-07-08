@@ -20,6 +20,7 @@ Page({
     yunfei:0,
     pici: '选择优惠券',
     discount_id: '',
+    srcCoupon: ''
   },
 
   /**
@@ -136,6 +137,7 @@ Page({
   },
   selquan:function (e){
     // 选择购物券
+    var that = this;
     var id = e.currentTarget.dataset.id;
     var pici = e.currentTarget.dataset.pici;
     console.log(id);
@@ -143,7 +145,7 @@ Page({
     that.setData({
       pici:pici,
       discount_id:id
-    })
+    });
   },
   changeAdd:function(){
       wx.navigateTo({

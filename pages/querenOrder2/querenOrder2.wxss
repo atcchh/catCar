@@ -303,8 +303,8 @@ height:115rpx;
   padding:0 20rpx;
 }
 .quan image{
-  width:710rpx;
-  height:140rpx;
+  width: 640rpx;
+  height: 140rpx;
 }
 .quan .left{
   float:left;
@@ -316,6 +316,13 @@ height:115rpx;
   width:60rpx;
   height:100%;
   line-height:100%;
+}
+.quan .imgBox image {
+    width: 44rpx;
+    height: 44rpx;
+    position:relative;
+    bottom: 20rpx;
+    left: 12rpx;
 }
 .huiNum{
   font-size:26rpx;

@@ -327,7 +327,7 @@ Page({
       //     call(res.data)
       //   },
       // })
-      var salesman_phone = wx.getStorageSync('salesman_phone') || '‭‭15110299623';
+      var salesman_phone = wx.getStorageSync('salesman_phone') || '0574-87670555';
       call(salesman_phone);
       function call(phone) {
         wx.makePhoneCall({

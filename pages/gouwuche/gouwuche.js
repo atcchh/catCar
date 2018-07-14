@@ -6,12 +6,13 @@ Page({
    */
   data: {
     kong:false,
-    counts: 1,
+    counts: 0,
     ableColor: "border:1px solid #969696;",
     state:"去支付",
     allsel:"",
     bianji:"编辑",
     dis: false,
+    allprice: 0
   },
 
   /**
@@ -52,7 +53,7 @@ Page({
           }
           that.setData({
             cart:res,
-            allprice: allprice/100
+            // allprice: allprice/100
           });
         }
       })
@@ -77,13 +78,19 @@ Page({
     var  that=this;
     var id = e.currentTarget.dataset.id;
     var res=that.data.cart;
+    var allprice = that.data.allprice * 100;
+    var counts = that.data.counts;
     var allcounts = 0;
     for(var i=0;i<res.length;i++){
       if(res[i].id==id){
         if(res[i].select==""){
+          allprice += res[i].price * res[i].count * 100;
+          counts++;
           res[i].select ="../images/se_red.png";
         }else{
           res[i].select = "";
+          counts--;
+          allprice -= res[i].price * res[i].count * 100;
           that.setData({
             allsel: ''
           })
@@ -100,36 +107,40 @@ Page({
       })
     }
     that.setData({
-      cart:res
+      cart:res,
+      allprice: allprice / 100,
+      counts: counts
     })
   },
   allsels: function (e) {//../images/se_red.png
     var that=this;
     var res=that.data.cart;
     var allsel = e.currentTarget.dataset.see;
+    var allprice = 0;
+    var counts = 0;
     if (allsel == "") {
-      for (var i = 0; i < res.length; i++) {
-        res[i].select = "../images/se_red.png"
-      }
+        counts = res.length;
+        for (var i = 0; i < res.length; i++) {
+            res[i].select = "../images/se_red.png"
+            allprice += res[i].price * res[i].count * 100;
+        }
         that.setData({
-          imgs: "../images/se_red.png"
-        })
+            imgs: "../images/se_red.png",
+            allsel: "../images/se_red.png",
+            cart: res,
+            allprice: allprice / 100,
+            counts: counts
+        });
+    } else {
+        for (var i = 0; i < res.length; i++) {
+            res[i].select = "";
+        }
         that.setData({
-          allsel: "../images/se_red.png"
-        })
-        that.setData({
-          cart: res
-        })
-    }else{
-      for (var i = 0; i < res.length; i++) {
-        res[i].select = "";
-      }
-      that.setData({
-        imgs: ""
-      })
-      that.setData({
-        allsel: ""
-      })
+            imgs: "",
+            allsel: "",
+            allprice: 0,
+            counts: 0
+        });
     }
     
 
@@ -183,7 +194,9 @@ Page({
           }
           that.setData({
             cart: res,
-            allprice: allprice / 100
+            allprice: 0,
+            counts: 0
+            // allprice: allprice / 100
           });
         }
       })
@@ -255,7 +268,9 @@ Page({
           }
           that.setData({
             cart: res,
-            allprice: allprice / 100
+            allprice: 0,
+            counts: 0
+            // allprice: allprice / 100
           });
         }
       })
@@ -353,7 +368,7 @@ Page({
                   }
                   that.setData({
                     cart: res,
-                    allprice: allprice / 100
+                    // allprice: allprice / 100
                   });
                 }
               })
@@ -364,6 +379,17 @@ Page({
         })
       }
     } else if (that.data.state == '去支付') {
+        var counts = that.data.counts;
+        if (!counts) {
+            wx.showModal({
+                title: '提示',
+                content: '请选择商品',
+                success: function(res) {
+                  
+                }
+            });
+            return false;
+        }
       //跳转到支付
       var that = this;
       var skulist = [];

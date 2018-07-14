@@ -106,6 +106,9 @@ Page({
               urls:urls
             })
             
+          },
+          fail: function (e) {
+              console.log(2);
           }
         })
       }

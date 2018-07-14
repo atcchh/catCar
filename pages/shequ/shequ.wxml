@@ -6,7 +6,7 @@
   </view>
   <view class='sc'>
     <scroll-view scroll-x class="scroll-header">
-      <view id="green" class="scroll-view-item bc_green" wx:for="{{hotMsg1}}" data-id="{{item.id}}" bindtap='toDetailHot' data-id="{{item.id}}">
+      <view id="green" wx:if="{{item.img_urls}}" class="scroll-view-item bc_green" wx:for="{{hotMsg1}}" data-id="{{item.id}}" bindtap='toDetailHot' data-id="{{item.id}}">
           <image src="{{item.img_urls}}"></image>
       </view>
     </scroll-view>

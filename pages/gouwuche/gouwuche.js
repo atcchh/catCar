@@ -368,6 +368,8 @@ Page({
                   }
                   that.setData({
                     cart: res,
+                    counts: 0,
+                    allprice: 0
                     // allprice: allprice / 100
                   });
                 }

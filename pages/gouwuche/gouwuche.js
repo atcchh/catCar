@@ -12,7 +12,8 @@ Page({
     allsel:"",
     bianji:"编辑",
     dis: false,
-    allprice: 0
+    allprice: 0,
+    isEditing: false
   },
 
   /**
@@ -156,19 +157,26 @@ Page({
     var color_id = e.currentTarget.dataset.color;
     var count = e.currentTarget.dataset.count;
     var size_id = e.currentTarget.dataset.size;
+    var isEditing = that.data.isEditing;
+    if (isEditing) {
+        return false;
+    }
+    that.setData({
+        isEditing: true
+    })
     // data-pid='{{item.product_id}}' data-color='{{item.color_id}}' data-size='{{item.size_id}}' data-count='{{item.count}}' data-id="{{item.id}}" data-user='{{item.user_id}}
     wx.request({  //2+"&color_id="+"5"+"&size_id="+"4",
       url: "https://maxbeijing.mxlgsl.cn/Miao/moneyProduct/deleteCarts.do?id=" + id,
       success: function (res) {
         //删除购物车商品
-      }
-    })
-    wx.request({  //添加购物车
-      url: "https://maxbeijing.mxlgsl.cn/Miao/moneyProduct/addCart.do?user_id=" + user_id + "&product_id=" + product_id + "&color_id=" + color_id + "&size_id=" + size_id + "&count=" + (count - 1),
-      success: function (res) {
-        //添加购物车
-        console.log(res);
-        getCart();
+        wx.request({  //添加购物车
+            url: "https://maxbeijing.mxlgsl.cn/Miao/moneyProduct/addCart.do?user_id=" + user_id + "&product_id=" + product_id + "&color_id=" + color_id + "&size_id=" + size_id + "&count=" + (count - 1),
+            success: function (res) {
+              //添加购物车
+              console.log(res);
+              getCart();
+            }
+        })
       }
     })
     function getCart() {
@@ -195,7 +203,8 @@ Page({
           that.setData({
             cart: res,
             allprice: 0,
-            counts: 0
+            counts: 0,
+            isEditing: false
             // allprice: allprice / 100
           });
         }
@@ -230,19 +239,26 @@ Page({
     var color_id = e.currentTarget.dataset.color;
     var count = e.currentTarget.dataset.count;
     var size_id = e.currentTarget.dataset.size;
+    var isEditing = that.data.isEditing;
+    if (isEditing) {
+        return false;
+    }
+    that.setData({
+        isEditing: true
+    })
     // data-pid='{{item.product_id}}' data-color='{{item.color_id}}' data-size='{{item.size_id}}' data-count='{{item.count}}' data-id="{{item.id}}" data-user='{{item.user_id}}
     wx.request({  //2+"&color_id="+"5"+"&size_id="+"4",
       url: "https://maxbeijing.mxlgsl.cn/Miao/moneyProduct/deleteCarts.do?id=" + id,
       success: function (res) {
         //删除购物车商品
-      }
-    })
-    wx.request({  //添加购物车
-      url: "https://maxbeijing.mxlgsl.cn/Miao/moneyProduct/addCart.do?user_id=" + user_id + "&product_id=" + product_id + "&color_id=" + color_id + "&size_id=" + size_id + "&count=" + (count+1),
-      success: function (res) {
-        //添加购物车
-        console.log(res);
-        getCart();
+        wx.request({  //添加购物车
+            url: "https://maxbeijing.mxlgsl.cn/Miao/moneyProduct/addCart.do?user_id=" + user_id + "&product_id=" + product_id + "&color_id=" + color_id + "&size_id=" + size_id + "&count=" + (count+1),
+            success: function (res) {
+              //添加购物车
+              console.log(res);
+              getCart();
+            }
+          })
       }
     })
     function getCart(){
@@ -269,7 +285,8 @@ Page({
           that.setData({
             cart: res,
             allprice: 0,
-            counts: 0
+            counts: 0,
+            isEditing: false
             // allprice: allprice / 100
           });
         }
